@@ -11,46 +11,52 @@ header {
     align-items: center;
     height: 102px;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.485);
+    background-color: rgba(255, 255, 255, 1);
     border-bottom: 1px solid #999;
     padding: 0 20px;
-    position: relative; /* Keep position relative for child absolute positioning */
+    position: relative; 
 }
 
 header .logo {
-    background-color: red;
-    position: absolute;
+    width: auto;
+    float: left;
+    /* position: absolute;
     top: 50%;
     left: 20px;
-    transform: translateY(-50%); /* Center vertically */
+    transform: translateY(-50%);  */
+}
+
+header .logo img {
+    position: relative;
+    left: 60px;
+    width: 50%; /* Reduces the image width to half */
+    height: auto; /* Maintains the aspect ratio */
 }
 
 header .menu {
-    background-color: blue;
     position: absolute;
     top: 50%;
-    left: 20px;
-    transform: translateY(-50%); /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center vertically and horizontally */
 }
 
 header ul {
     display: flex;
-    gap: 20px;
+    gap: 56px;
     list-style: none;
     margin: 0;
     padding: 0;
+    position: relative;
+    bottom: 6px;
 }
 
 header ul li {
+    text-transform: uppercase;
     cursor: pointer;
 }
 
 header .contact {
     background-color: violet;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%); /* Center vertically */
 }
 
 header button {
