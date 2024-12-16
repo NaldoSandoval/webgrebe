@@ -1,0 +1,79 @@
+body {
+    font-family: 'Unbounded', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E4E4E4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 102px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.485);
+    border-bottom: 1px solid #999;
+    padding: 0 20px;
+    position: relative; /* Keep position relative for child absolute positioning */
+}
+
+header .logo {
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%); /* Center vertically */
+}
+
+header .menu {
+    background-color: blue;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%); /* Center vertically */
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    cursor: pointer;
+}
+
+header .contact {
+    background-color: violet;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%); /* Center vertically */
+}
+
+header button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-reference {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    width: 100%;
+    text-align: center;
+}
+
+.container img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
