@@ -3,9 +3,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #E4E4E4;
+    overflow-x: hidden;
 }
 
 header {
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,24 +22,20 @@ header {
 header .logo {
     width: auto;
     float: left;
-    /* position: absolute;
-    top: 50%;
-    left: 20px;
-    transform: translateY(-50%);  */
 }
 
 header .logo img {
     position: relative;
     left: 60px;
-    width: 50%; /* Reduces the image width to half */
-    height: auto; /* Maintains the aspect ratio */
+    width: 50%;
+    height: auto;
 }
 
 header .menu {
     position: absolute;
     top: 50%;
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Center vertically and horizontally */
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 header ul {
@@ -76,6 +74,7 @@ header button {
     z-index: -1;
     width: 100%;
     text-align: center;
+    opacity: 20%;
 }
 
 .container img {
@@ -83,3 +82,150 @@ header button {
     max-width: 100%;
     height: auto;
 }
+
+
+
+.ver-guideline-left {
+    position: absolute;
+    top: 0;
+    bottom: 0; 
+    left: 50%;
+    width: 1px; 
+    background-color: #999; 
+    z-index: 1; 
+    transform: translateX(450px);
+}
+
+.ver-guideline-center {
+    position: absolute;
+    top: 0;
+    bottom: 0; 
+    left: 50%; /* Center the first line */
+    width: 1px; /* Line thickness */
+    background-color: #999; /* Line color */
+    z-index: 0; 
+}
+
+.ver-guideline-right {
+    position: absolute;
+    top: 0;
+    bottom: 0; 
+    left: 50%; /* Center the first line */
+    width: 1px; /* Line thickness */
+    background-color: #999; /* Line color */
+    z-index: 1; /* Ensure it is behind other elements */
+    transform: translateX(-450px);
+}
+
+/* Horizontal Guideline 1 */
+.hor-guideline-1 {
+    position: absolute;
+    top: 180px; /* Adjust the position as needed */
+    left: 0; /* Start at the left edge */
+    width: 100%; /* Span the full width */
+    height: 1px; /* Thickness of the guideline */
+    background-color: #999; /* Line color */
+    z-index: 0; /* Ensure it appears behind content if needed */
+}
+
+/* Horizontal Guideline 2 */
+.hor-guideline-2 {
+    position: absolute;
+    top: 540px; /* Adjust the position as needed */
+    left: 0; /* Start at the left edge */
+    width: 100%; /* Span the full width */
+    height: 1px; /* Thickness of the guideline */
+    background-color: #999; /* Line color */
+    z-index: 0; /* Ensure it appears behind content if needed */
+}
+
+.animated_text1 {
+    position: relative;
+    top: 106px;
+    width: 100%; /* Container width */
+    height: 210px; /* Adjust height to fit the content */
+    /* background-color: rgba(255, 0, 0, 0.096); */
+    background-image: url("../img/text1.png");
+    background-repeat: repeat-x; /* Repeat horizontally */
+    background-size: auto; /* Maintain original image size */
+    background-position: top left; /* Position at the top-left */
+}
+
+.animated_text2 {
+    position: relative;
+    top: 80px;
+    width: 100%; /* Container width */
+    height: 260px; /* Adjust height to fit the content */
+    /* background-color: rgba(255, 0, 0, 0.096); */
+    background-image: url("../img/text2.png");
+    background-repeat: repeat-x; /* Repeat horizontally */
+    background-size: auto; /* Maintain original image size */
+    background-position: top left; /* Position at the top-left */
+}
+
+/* .animated_text1,
+.animated_text2 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 150px;
+    background-repeat: repeat-x; 
+    background-size: auto 100%;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.animated_text1 {
+    background-image: url("img/text1.png");
+}
+
+.animated_text2 {
+    background-image: url('img/text2.png');
+} */
+
+/* .animated_text1 {
+    position: relative;
+    top: 104px;
+    left: 16px;
+}
+
+.animated_text2 {
+    position: relative;
+    top: 88px;
+    left: 16px;
+} */
+
+
+
+/* .marquee {
+    position: relative;
+    width: 100%; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    box-sizing: border-box;
+}
+
+.marquee span {
+    display: inline-block;
+    font-size: 18rem; 
+    font-weight: 900; 
+    text-transform: uppercase;
+    animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(50%); 
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.outlined-text {
+    text-transform: uppercase; 
+    color: #E4E4E4; 
+    -webkit-text-stroke: 2px black;
+    text-align: center; 
+} */
