@@ -74,7 +74,7 @@ header button {
     z-index: -1;
     width: 100%;
     text-align: center;
-    opacity: 20%;
+    opacity: 0%;
 }
 
 .container img {
@@ -83,15 +83,13 @@ header button {
     height: auto;
 }
 
-
-
 .ver-guideline-left {
     position: absolute;
     top: 0;
     bottom: 0; 
     left: 50%;
     width: 1px; 
-    background-color: #999; 
+    background-color: #bbb; 
     z-index: 1; 
     transform: translateX(450px);
 }
@@ -102,7 +100,7 @@ header button {
     bottom: 0; 
     left: 50%; /* Center the first line */
     width: 1px; /* Line thickness */
-    background-color: #999; /* Line color */
+    background-color: #bbb; /* Line color */
     z-index: 0; 
 }
 
@@ -112,7 +110,7 @@ header button {
     bottom: 0; 
     left: 50%; /* Center the first line */
     width: 1px; /* Line thickness */
-    background-color: #999; /* Line color */
+    background-color: #bbb; /* Line color */
     z-index: 1; /* Ensure it is behind other elements */
     transform: translateX(-450px);
 }
@@ -124,7 +122,7 @@ header button {
     left: 0; /* Start at the left edge */
     width: 100%; /* Span the full width */
     height: 1px; /* Thickness of the guideline */
-    background-color: #999; /* Line color */
+    background-color: #bbb; /* Line color */
     z-index: 0; /* Ensure it appears behind content if needed */
 }
 
@@ -135,35 +133,34 @@ header button {
     left: 0; /* Start at the left edge */
     width: 100%; /* Span the full width */
     height: 1px; /* Thickness of the guideline */
-    background-color: #999; /* Line color */
+    background-color: #bbb; /* Line color */
     z-index: 0; /* Ensure it appears behind content if needed */
 }
 
 .animated_text1 {
     position: relative;
     top: 106px;
-    width: 1000%; /* Container width */
+    width: 2000%; /* Container width */
     height: 210px; /* Adjust height to fit the content */
     background-image: url("../img/text1.png");
     background-repeat: repeat-x; /* Repeat horizontally */
     background-size: auto; /* Maintain original image size */
     background-position: 0 0; /* Start position */
-    animation: scroll-right-to-left 140s linear infinite; /* Animate background */
+    animation: scroll-right-to-left 320s linear infinite; /* Animate background */
 }
 
 .animated_text2 {
     position: relative;
     top: 80px;
-    width: 1000%; /* Container width */
+    width: 2000%; /* Container width */
     height: 260px; /* Adjust height to fit the content */
     background-image: url("../img/text2.png");
     background-repeat: repeat-x; /* Repeat horizontally */
     background-size: auto; /* Maintain original image size */
     background-position: 0 0; /* Start position */
-    animation: scroll-left-to-right 140s linear infinite; /* Animate background */
+    animation: scroll-left-to-right 320s linear infinite; /* Animate background */
 }
 
-/* Keyframes for Text 1: Right to Left */
 @keyframes scroll-right-to-left {
     0% {
         background-position: 0 0; /* Start from the left */
