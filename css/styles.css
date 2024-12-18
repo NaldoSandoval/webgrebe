@@ -16,7 +16,7 @@ header {
     background-color: rgba(255, 255, 255, 1);
     border-bottom: 1px solid #999;
     padding: 0 20px;
-    position: relative; 
+    position: relative;
 }
 
 header .logo {
@@ -53,14 +53,15 @@ header ul li {
     cursor: pointer;
 }
 
-header .contact {
-    background-color: violet;
-}
-
 header button {
-    padding: 10px 15px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font: inherit;
+    position: relative;
+    right: 90px;
+    padding: 10px 25px;
     border: none;
-    background-color: #007BFF;
+    background-color: #ff5900;
     color: white;
     border-radius: 5px;
     cursor: pointer;
@@ -86,98 +87,165 @@ header button {
 .ver-guideline-left {
     position: absolute;
     top: 0;
-    bottom: 0; 
+    bottom: 0;
     left: 50%;
-    width: 1px; 
-    background-color: #bbb; 
-    z-index: 1; 
+    width: 1px;
+    background-color: #bbb;
+    z-index: 1;
     transform: translateX(450px);
 }
 
 .ver-guideline-center {
     position: absolute;
     top: 0;
-    bottom: 0; 
-    left: 50%; /* Center the first line */
-    width: 1px; /* Line thickness */
-    background-color: #bbb; /* Line color */
-    z-index: 0; 
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background-color: #bbb;
+    z-index: 0;
 }
 
 .ver-guideline-right {
     position: absolute;
     top: 0;
-    bottom: 0; 
-    left: 50%; /* Center the first line */
-    width: 1px; /* Line thickness */
-    background-color: #bbb; /* Line color */
-    z-index: 1; /* Ensure it is behind other elements */
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background-color: #bbb;
+    z-index: 1;
     transform: translateX(-450px);
 }
 
-/* Horizontal Guideline 1 */
+/* Horizontal Guidelines */
+
 .hor-guideline-1 {
     position: absolute;
-    top: 180px; /* Adjust the position as needed */
-    left: 0; /* Start at the left edge */
-    width: 100%; /* Span the full width */
-    height: 1px; /* Thickness of the guideline */
-    background-color: #bbb; /* Line color */
-    z-index: 0; /* Ensure it appears behind content if needed */
+    top: 180px;
+    /* Adjust the position as needed */
+    left: 0;
+    /* Start at the left edge */
+    width: 100%;
+    /* Span the full width */
+    height: 1px;
+    /* Thickness of the guideline */
+    background-color: #bbb;
+    /* Line color */
+    z-index: 0;
+    /* Ensure it appears behind content if needed */
 }
 
-/* Horizontal Guideline 2 */
 .hor-guideline-2 {
     position: absolute;
-    top: 540px; /* Adjust the position as needed */
-    left: 0; /* Start at the left edge */
-    width: 100%; /* Span the full width */
-    height: 1px; /* Thickness of the guideline */
-    background-color: #bbb; /* Line color */
-    z-index: 0; /* Ensure it appears behind content if needed */
+    top: 680px;
+    /* Adjust the position as needed */
+    left: 0;
+    /* Start at the left edge */
+    width: 100%;
+    /* Span the full width */
+    height: 1px;
+    /* Thickness of the guideline */
+    background-color: #bbb;
+    /* Line color */
+    z-index: 0;
+    /* Ensure it appears behind content if needed */
+}
+
+.hor-guideline-3 {
+    position: absolute;
+    top: 760px;
+    /* Adjust the position as needed */
+    left: 0;
+    /* Start at the left edge */
+    width: 100%;
+    /* Span the full width */
+    height: 1px;
+    /* Thickness of the guideline */
+    background-color: #bbb;
+    /* Line color */
+    z-index: 0;
+    /* Ensure it appears behind content if needed */
 }
 
 .animated_text1 {
     position: relative;
     top: 106px;
-    width: 2000%; /* Container width */
-    height: 210px; /* Adjust height to fit the content */
+    width: 2000%;
+    /* Container width */
+    height: 210px;
+    /* Adjust height to fit the content */
     background-image: url("../img/text1.png");
-    background-repeat: repeat-x; /* Repeat horizontally */
-    background-size: auto; /* Maintain original image size */
-    background-position: 0 0; /* Start position */
-    animation: scroll-right-to-left 320s linear infinite; /* Animate background */
+    background-repeat: repeat-x;
+    /* Repeat horizontally */
+    background-size: auto;
+    /* Maintain original image size */
+    background-position: 0 0;
+    /* Start position */
+    animation: scroll-right-to-left 320s linear infinite;
+    /* Animate background */
 }
 
 .animated_text2 {
     position: relative;
     top: 80px;
-    width: 2000%; /* Container width */
-    height: 260px; /* Adjust height to fit the content */
+    width: 2000%;
+    /* Container width */
+    height: 260px;
+    /* Adjust height to fit the content */
     background-image: url("../img/text2.png");
-    background-repeat: repeat-x; /* Repeat horizontally */
-    background-size: auto; /* Maintain original image size */
-    background-position: 0 0; /* Start position */
-    animation: scroll-left-to-right 320s linear infinite; /* Animate background */
+    background-repeat: repeat-x;
+    /* Repeat horizontally */
+    background-size: auto;
+    /* Maintain original image size */
+    background-position: 0 0;
+    /* Start position */
+    animation: scroll-left-to-right 320s linear infinite;
+    /* Animate background */
 }
 
 @keyframes scroll-right-to-left {
     0% {
-        background-position: 0 0; /* Start from the left */
+        background-position: 0 0;
+        /* Start from the left */
     }
+
     100% {
-        background-position: -100% 0; /* Move to the left */
+        background-position: -100% 0;
+        /* Move to the left */
     }
 }
 
 /* Keyframes for Text 2: Left to Right */
 @keyframes scroll-left-to-right {
     0% {
-        background-position: 0 0; /* Start from the left */
+        background-position: 0 0;
+        /* Start from the left */
     }
+
     100% {
-        background-position: 100% 0; /* Move to the right */
+        background-position: 100% 0;
+        /* Move to the right */
     }
+}
+
+.wire-images .img1 {
+    position: relative;
+    left: -100px;
+    top: 40px;
+    mix-blend-mode: multiply;
+    opacity: 0.5;
+    transform: rotate(05deg);
+    transform: scale(0.90);
+}
+
+.wire-images .img2 {
+    position: relative;
+    left: 1628px;
+    top: -1024px;
+    mix-blend-mode: multiply;
+    opacity: 0.5;
+    transform: rotate(05deg);
+    transform: scaleY(0.9);
+    transform: scaleX(0.9);
 }
 
 /* .animated_text1,
