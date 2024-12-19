@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    z-index: 1;
+    z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,7 +16,7 @@ header {
     background-color: rgba(255, 255, 255, 1);
     border-bottom: 1px solid #999;
     padding: 0 20px;
-    position: relative;
+    position: fixed;
 }
 
 header .logo {
@@ -84,8 +84,30 @@ header button {
     height: auto;
 }
 
+.header-guideline-left {
+    position: fixed;
+    top: 0;
+    bottom: 958px;
+    left: 50%;
+    width: 1px;
+    background-color: #bbb;
+    z-index: 10;
+    transform: translateX(450px);
+}
+
+.header-guideline-right {
+    position: fixed;
+    top: 0;
+    bottom: 958px;
+    left: 50%;
+    width: 1px;
+    background-color: #bbb;
+    z-index: 10;
+    transform: translateX(-450px);
+}
+
 .ver-guideline-left {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -96,7 +118,7 @@ header button {
 }
 
 .ver-guideline-center {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -106,7 +128,7 @@ header button {
 }
 
 .ver-guideline-right {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -121,96 +143,86 @@ header button {
 .hor-guideline-1 {
     position: absolute;
     top: 180px;
-    /* Adjust the position as needed */
     left: 0;
-    /* Start at the left edge */
     width: 100%;
-    /* Span the full width */
     height: 1px;
-    /* Thickness of the guideline */
     background-color: #bbb;
-    /* Line color */
     z-index: 0;
-    /* Ensure it appears behind content if needed */
 }
 
 .hor-guideline-2 {
     position: absolute;
-    top: 680px;
-    /* Adjust the position as needed */
+    top: 576px;
     left: 0;
-    /* Start at the left edge */
     width: 100%;
-    /* Span the full width */
     height: 1px;
-    /* Thickness of the guideline */
     background-color: #bbb;
-    /* Line color */
     z-index: 0;
-    /* Ensure it appears behind content if needed */
 }
 
 .hor-guideline-3 {
     position: absolute;
     top: 760px;
-    /* Adjust the position as needed */
     left: 0;
-    /* Start at the left edge */
     width: 100%;
-    /* Span the full width */
     height: 1px;
-    /* Thickness of the guideline */
     background-color: #bbb;
-    /* Line color */
     z-index: 0;
-    /* Ensure it appears behind content if needed */
+}
+
+.hor-guideline-4 {
+    position: absolute;
+    top: 1210px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #bbb;
+    z-index: 0;
+}
+
+.hor-guideline-5 {
+    position: absolute;
+    top: 1660px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #bbb;
+    z-index: 0;
 }
 
 .animated_text1 {
+    z-index: 5;
     position: relative;
-    top: 106px;
+    top: 176px;
     width: 2000%;
-    /* Container width */
     height: 210px;
-    /* Adjust height to fit the content */
     background-image: url("../img/text1.png");
     background-repeat: repeat-x;
-    /* Repeat horizontally */
     background-size: auto;
-    /* Maintain original image size */
     background-position: 0 0;
-    /* Start position */
     animation: scroll-right-to-left 320s linear infinite;
-    /* Animate background */
 }
 
 .animated_text2 {
+    z-index: 5;
     position: relative;
-    top: 80px;
+    top: 110px;
     width: 2000%;
-    /* Container width */
     height: 260px;
-    /* Adjust height to fit the content */
     background-image: url("../img/text2.png");
     background-repeat: repeat-x;
-    /* Repeat horizontally */
     background-size: auto;
-    /* Maintain original image size */
     background-position: 0 0;
-    /* Start position */
     animation: scroll-left-to-right 320s linear infinite;
-    /* Animate background */
 }
 
 @keyframes scroll-right-to-left {
     0% {
         background-position: 0 0;
-        /* Start from the left */
     }
 
     100% {
         background-position: -100% 0;
-        /* Move to the left */
     }
 }
 
@@ -218,12 +230,10 @@ header button {
 @keyframes scroll-left-to-right {
     0% {
         background-position: 0 0;
-        /* Start from the left */
     }
 
     100% {
         background-position: 100% 0;
-        /* Move to the right */
     }
 }
 
@@ -232,9 +242,10 @@ header button {
     left: -100px;
     top: 40px;
     mix-blend-mode: multiply;
-    opacity: 0.5;
+    opacity: 0.7;
     transform: rotate(05deg);
     transform: scale(0.90);
+    z-index: -5;
 }
 
 .wire-images .img2 {
@@ -242,75 +253,20 @@ header button {
     left: 1628px;
     top: -1024px;
     mix-blend-mode: multiply;
-    opacity: 0.5;
+    opacity: 0.7;
     transform: rotate(05deg);
     transform: scaleY(0.9);
     transform: scaleX(0.9);
+    z-index: -5;
 }
 
-/* .animated_text1,
-.animated_text2 {
+#showcase1 div {
     position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 150px;
-    background-repeat: repeat-x; 
-    background-size: auto 100%;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    top: 761px;
+    left: 50%;
+    background-color: white;
+    width: 1800px;
+    height: 900px;
+    z-index: -1;
+    transform: translateX(-450px);
 }
-
-.animated_text1 {
-    background-image: url("img/text1.png");
-}
-
-.animated_text2 {
-    background-image: url('img/text2.png');
-} */
-
-/* .animated_text1 {
-    position: relative;
-    top: 104px;
-    left: 16px;
-}
-
-.animated_text2 {
-    position: relative;
-    top: 88px;
-    left: 16px;
-} */
-
-
-
-/* .marquee {
-    position: relative;
-    width: 100%; 
-    overflow: hidden; 
-    white-space: nowrap; 
-    box-sizing: border-box;
-}
-
-.marquee span {
-    display: inline-block;
-    font-size: 18rem; 
-    font-weight: 900; 
-    text-transform: uppercase;
-    animation: scroll 40s linear infinite;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(50%); 
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
-.outlined-text {
-    text-transform: uppercase; 
-    color: #E4E4E4; 
-    -webkit-text-stroke: 2px black;
-    text-align: center; 
-} */
