@@ -91,6 +91,7 @@ body {
     }
 }
 
+/* initial slots state */
 .slot1,
 .slot2,
 .slot3,
@@ -103,6 +104,18 @@ body {
     position: absolute;
     background-color: white;
     transition: background-color 0.3s ease;
+}
+
+/* when overing slots */
+.slot1:hover,
+.slot2:hover,
+.slot3:hover,
+.slot4:hover,
+.slot5:hover,
+.slot6:hover,
+.slot7:hover,
+.slot8:hover {
+    background-color: #ff5900;
 }
 
 .slot1 .title,
@@ -123,17 +136,6 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.slot1:hover,
-.slot2:hover,
-.slot3:hover,
-.slot4:hover,
-.slot5:hover,
-.slot6:hover,
-.slot7:hover,
-.slot8:hover {
-    background-color: #ff5900;
-}
-
 .slot1:hover .title ,
 .slot2:hover .title ,
 .slot3:hover .title ,
@@ -144,6 +146,7 @@ body {
 .slot8:hover .title  {
     opacity: 0%;
     transition: opacity 0.3s ease;
+    color: black;
 }
 
 .slot1 .over-title ,
@@ -158,10 +161,9 @@ body {
     transition: opacity 0.3s ease;
     opacity: 0%;
     margin: 40px 30px;
-    color: white;
+    color: black;
     text-transform: uppercase;
     font-weight: bold;
-    transition: opacity 0.5s ease;
 }
 
 .slot1:hover .over-title ,
@@ -173,6 +175,7 @@ body {
 .slot7:hover .over-title ,
 .slot8:hover .over-title  {
     opacity: 100%;
+    transition-delay: 1s; 
     transition: opacity 0.3s ease;
 }
 
@@ -186,10 +189,11 @@ body {
 .slot8 .over-description  {
     opacity: 0%;
     transition: opacity 0.3s ease;
-    margin: -20px 30px;
-    color: white;
+    margin: -20px 30px 100px 30px;
+    padding-right: 60px;
+    color: black;
     font-family: 'Barlow', sans-serif;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .slot1:hover .over-description ,
@@ -201,6 +205,7 @@ body {
 .slot7:hover .over-description ,
 .slot8:hover .over-description  {
     opacity: 100%;
+    transition-delay: 1s; 
     transition: opacity 0.3s ease;
 }
 
@@ -215,26 +220,6 @@ body {
     width: 449px;
     height: 300px;
     transform: translate(-449px, 0);
-}
-
-.slot2 .over-title {
-    opacity: 0%;
-    margin: 40px 30px;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: opacity 0.5s ease;
-}
-
-.slot2:hover .over-title {
-    opacity: 100%;
-}
-
-.slot2 .over-description {
-    margin: -20px 30px;
-    color: white;
-    font-family: 'Barlow', sans-serif;
-    font-size: 28px;
 }
 
 .slot3 {
@@ -308,15 +293,6 @@ body {
     transform: translate(0, -0);
 }
 
-.slot7 .title {
-    position: absolute;
-    font-size: 36px;
-    text-transform: uppercase;
-    font-weight: bolder;
-    bottom: -15px;
-    left: 30px;
-}
-
 .slot8 {
     position: absolute;
     top: 1261px;
@@ -325,15 +301,6 @@ body {
     width: 450px;
     height: 300px;
     transform: translate(450px, -0);
-}
-
-.slot8 .title {
-    position: absolute;
-    font-size: 36px;
-    text-transform: uppercase;
-    font-weight: bolder;
-    bottom: -15px;
-    left: 30px;
 }
 
 header {
