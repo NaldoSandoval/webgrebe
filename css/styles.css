@@ -7,6 +7,227 @@ body {
     height: 6000px; /* controla el alto del sitio */
 }
 
+.scroll {
+    border-radius: 60px;
+    border: 1px solid #666;
+    background-color: white;
+    display: block;
+    width: 220px;
+    height: 60px;
+    position: absolute;
+    top: 660px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 100%;
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+}
+
+.scroll-img {
+    position: absolute;
+    top: 720px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    height: 32px; /* Half the original height */
+    width: 30px; /* Half the original width */
+    background-image: url('../img/scroll-arrow.png');
+    background-size: contain; /* Scales the image */
+    background-repeat: no-repeat; /* Prevents repetition */
+    background-position: center; /* Centers the image */
+    animation: moveDown 1s infinite; /* Applies the animation */
+}
+
+/* Animation keyframes */
+@keyframes moveDown {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+    50% {
+        transform: translate(-50%, -25%); /* Moves down slightly */
+    }
+    100% {
+        transform: translate(-50%, -50%); /* Returns to original position */
+    }
+}
+
+.titlebox {
+    position: absolute;
+    left: 50%;
+    top: 1362px;
+    width: 900px;
+    height: 50px;
+    background-color: black;
+    transform: translate(-449px, -451px); /* Returns to original position */
+}
+
+.titlebox H3 {
+    position: relative;
+    bottom: 10px;
+    font-size: 22px;
+    color: white;
+}
+
+.slot1 {
+    display: none;
+    z-index: -1;
+    position: absolute;
+    top: 961px;
+    left: 50%;
+    background-color: white;
+    width: 450px;
+    height: 300px;
+    transform: translate(-900px,-0); /* Returns to original position */
+}
+
+.slot2 {
+    z-index: -1;
+    position: absolute;
+    top: 961px;
+    left: 50%;
+    background-color: white;
+    width: 449px;
+    height: 300px;
+    transform: translate(-449px, -0); /* Returns to original position */
+}
+
+.slot2 p {
+    position: absolute;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    bottom: -15px;
+    left: 20px;
+}
+
+.slot3 {
+    z-index: -1;
+    position: absolute;
+    top: 961px;
+    left: 50%;
+    background-color: white;
+    width: 450px;
+    height: 300px;
+    transform: translate(0, -0); /* Returns to original position */
+}
+
+.slot3 p {
+    position: absolute;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    bottom: -15px;
+    left: 20px;
+}
+
+.slot4 {
+    z-index: -1;
+    position: absolute;
+    top: 961px;
+    left: 50%;
+    background-color: white;
+    width: 450px;
+    height: 300px;
+    transform: translate(450px, -0); /* Returns to original position */
+}
+
+.slot4 p {
+    position: absolute;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    bottom: -15px;
+    left: 20px;
+}
+
+.slot5 {
+    display: none;
+}
+
+.slot6 {
+    z-index: -1;
+    position: absolute;
+    top: 1261px;
+    left: 50%;
+    background-color: white;
+    width: 449px;
+    height: 300px;
+    transform: translate(-449px, -0); /* Returns to original position */
+}
+
+.slot6 p {
+    position: absolute;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    bottom: -15px;
+    left: 20px;
+}
+
+.slot7 {
+    z-index: -1;
+    position: absolute;
+    top: 1261px;
+    left: 50%;
+    background-color: white;
+    width: 450px;
+    height: 300px;
+    transform: translate(0, -0); /* Returns to original position */
+}
+
+.slot7 p {
+    position: absolute;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    bottom: -15px;
+    left: 20px;
+}
+
+.slot8 {
+    z-index: -1;
+    position: absolute;
+    top: 1261px;
+    left: 50%;
+    background-color: white;
+    width: 450px;
+    height: 300px;
+    transform: translate(450px, -0); /* Returns to original position */
+}
+
+.slot8 p {
+    position: absolute;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    bottom: -15px;
+    left: 20px;
+}
+
+/* .scroll-img img {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+/* .scroll-img {
+    width: 400px;
+    height: 400px;
+    background-image: url('img/arrow-scroll.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    margin: auto; 
+    position: absolute;
+    top: 660px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 100%;
+    z-index: 20;
+} */
+
 header {
     z-index: 10;
     display: flex;
@@ -76,7 +297,7 @@ header button {
     z-index: -1;
     width: 100%;
     text-align: center;
-    opacity: 0%;
+    opacity: 5%;
 }
 
 .container img {
@@ -183,7 +404,7 @@ header button {
 
 .hor-guideline-5 {
     position: absolute;
-    top: 1410px;
+    top: 1260px;
     left: 0;
     width: 100%;
     height: 1px;
@@ -193,7 +414,7 @@ header button {
 
 .hor-guideline-6 {
     position: absolute;
-    top: 1860px;
+    top: 1560px;
     left: 0;
     width: 100%;
     height: 1px;
@@ -310,4 +531,15 @@ header button {
     height: 900px;
     z-index: -1;
     transform: translateX(-449px);
+}
+
+#showcase2 div {
+    position: absolute;
+    top: 2161px;
+    right: 50%;
+    background-color: white;
+    width: 1800px;
+    height: 900px;
+    z-index: -1;
+    transform: translateX(451px);
 }
