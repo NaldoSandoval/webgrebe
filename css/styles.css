@@ -4,10 +4,11 @@ body {
     padding: 0;
     background-color: #E4E4E4;
     overflow-x: hidden;
-    height: 6000px; /* controla el alto del sitio */
+    height: 6000px;
 }
 
 .scroll {
+    z-index: 5;
     border-radius: 60px;
     border: 1px solid #666;
     background-color: white;
@@ -19,24 +20,25 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 100%;
-    display: flex; /* Enables Flexbox */
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .scroll-img {
+    z-index: 5;
     position: absolute;
     top: 720px;
     left: 50%;
     transform: translate(-50%, -50%);
     display: block;
-    height: 32px; /* Half the original height */
-    width: 30px; /* Half the original width */
+    height: 32px;
+    width: 30px;
     background-image: url('../img/scroll-arrow.png');
-    background-size: contain; /* Scales the image */
-    background-repeat: no-repeat; /* Prevents repetition */
-    background-position: center; /* Centers the image */
-    animation: moveDown 1s infinite; /* Applies the animation */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: moveDown 1s infinite;
 }
 
 /* Animation keyframes */
@@ -44,101 +46,233 @@ body {
     0% {
         transform: translate(-50%, -50%);
     }
+
     50% {
-        transform: translate(-50%, -25%); /* Moves down slightly */
+        transform: translate(-50%, -25%);
     }
+
     100% {
-        transform: translate(-50%, -50%); /* Returns to original position */
+        transform: translate(-50%, -50%);
     }
 }
 
 .titlebox {
+    z-index: 5;
     position: absolute;
     left: 50%;
     top: 1362px;
     width: 900px;
     height: 50px;
     background-color: black;
-    transform: translate(-449px, -451px); /* Returns to original position */
+    transform: translate(-449px, -451px);
+    overflow: hidden; 
 }
 
-.titlebox H3 {
+.marquee {
+    display: inline-block;
+    white-space: nowrap; 
+    animation: marquee 60s linear infinite; 
+}
+
+.marquee h3 {
+    left: -700px;
     position: relative;
-    bottom: 10px;
-    font-size: 22px;
+    font-size: 24px;
     color: white;
+    margin: 9px;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(70%);
+    }
+    to {
+        transform: translateX(-70%);
+    }
+}
+
+.slot1,
+.slot2,
+.slot3,
+.slot4,
+.slot5,
+.slot6,
+.slot7,
+.slot8 {
+    z-index: 0;
+    position: absolute;
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+.slot1 .title,
+.slot2 .title,
+.slot3 .title,
+.slot4 .title,
+.slot5 .title,
+.slot6 .title,
+.slot7 .title,
+.slot8 .title {
+    position: absolute;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    bottom: -15px;
+    left: 30px;
+    opacity: 1;
+    transition: background-color 0.3s ease;
+}
+
+.slot1:hover,
+.slot2:hover,
+.slot3:hover,
+.slot4:hover,
+.slot5:hover,
+.slot6:hover,
+.slot7:hover,
+.slot8:hover {
+    background-color: #ff5900;
+}
+
+.slot1:hover .title ,
+.slot2:hover .title ,
+.slot3:hover .title ,
+.slot4:hover .title ,
+.slot5:hover .title ,
+.slot6:hover .title ,
+.slot7:hover .title ,
+.slot8:hover .title  {
+    opacity: 0%;
+    transition: opacity 0.3s ease;
+}
+
+.slot1 .over-title ,
+.slot2 .over-title ,
+.slot3 .over-title ,
+.slot4 .over-title ,
+.slot5 .over-title ,
+.slot6 .over-title ,
+.slot7 .over-title ,
+.slot8 .over-title  {
+    opacity: 0%;
+    transition: opacity 0.3s ease;
+    opacity: 0%;
+    margin: 40px 30px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: opacity 0.5s ease;
+}
+
+.slot1:hover .over-title ,
+.slot2:hover .over-title ,
+.slot3:hover .over-title ,
+.slot4:hover .over-title ,
+.slot5:hover .over-title ,
+.slot6:hover .over-title ,
+.slot7:hover .over-title ,
+.slot8:hover .over-title  {
+    opacity: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.slot1 .over-description ,
+.slot2 .over-description ,
+.slot3 .over-description ,
+.slot4 .over-description ,
+.slot5 .over-description ,
+.slot6 .over-description ,
+.slot7 .over-description ,
+.slot8 .over-description  {
+    opacity: 0%;
+    transition: opacity 0.3s ease;
+    margin: -20px 30px;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-size: 28px;
+}
+
+.slot1:hover .over-description ,
+.slot2:hover .over-description ,
+.slot3:hover .over-description ,
+.slot4:hover .over-description ,
+.slot5:hover .over-description ,
+.slot6:hover .over-description ,
+.slot7:hover .over-description ,
+.slot8:hover .over-description  {
+    opacity: 100%;
+    transition: opacity 0.3s ease;
 }
 
 .slot1 {
     display: none;
-    z-index: -1;
-    position: absolute;
-    top: 961px;
-    left: 50%;
-    background-color: white;
-    width: 450px;
-    height: 300px;
-    transform: translate(-900px,-0); /* Returns to original position */
 }
 
 .slot2 {
-    z-index: -1;
-    position: absolute;
     top: 961px;
     left: 50%;
     background-color: white;
     width: 449px;
     height: 300px;
-    transform: translate(-449px, -0); /* Returns to original position */
+    transform: translate(-449px, 0);
 }
 
-.slot2 p {
-    position: absolute;
-    font-size: 36px;
+.slot2 .over-title {
+    opacity: 0%;
+    margin: 40px 30px;
+    color: white;
     text-transform: uppercase;
-    font-weight: bolder;
-    bottom: -15px;
-    left: 20px;
+    font-weight: bold;
+    transition: opacity 0.5s ease;
+}
+
+.slot2:hover .over-title {
+    opacity: 100%;
+}
+
+.slot2 .over-description {
+    margin: -20px 30px;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    font-size: 28px;
 }
 
 .slot3 {
-    z-index: -1;
     position: absolute;
     top: 961px;
     left: 50%;
-    background-color: white;
+
     width: 450px;
     height: 300px;
-    transform: translate(0, -0); /* Returns to original position */
+    transform: translate(0, -0);
 }
 
-.slot3 p {
+.slot3 .title {
     position: absolute;
     font-size: 36px;
     text-transform: uppercase;
     font-weight: bolder;
     bottom: -15px;
-    left: 20px;
+    left: 30px;
 }
 
 .slot4 {
-    z-index: -1;
     position: absolute;
     top: 961px;
     left: 50%;
     background-color: white;
     width: 450px;
     height: 300px;
-    transform: translate(450px, -0); /* Returns to original position */
+    transform: translate(450px, -0);
 }
 
-.slot4 p {
+.slot4 .title {
     position: absolute;
     font-size: 36px;
     text-transform: uppercase;
     font-weight: bolder;
     bottom: -15px;
-    left: 20px;
+    left: 30px;
 }
 
 .slot5 {
@@ -146,87 +280,61 @@ body {
 }
 
 .slot6 {
-    z-index: -1;
     position: absolute;
     top: 1261px;
     left: 50%;
     background-color: white;
     width: 449px;
     height: 300px;
-    transform: translate(-449px, -0); /* Returns to original position */
+    transform: translate(-449px, -0);
 }
 
-.slot6 p {
+.slot6 .title {
     position: absolute;
     font-size: 36px;
     text-transform: uppercase;
     font-weight: bolder;
     bottom: -15px;
-    left: 20px;
+    left: 30px;
 }
 
 .slot7 {
-    z-index: -1;
     position: absolute;
     top: 1261px;
     left: 50%;
     background-color: white;
     width: 450px;
     height: 300px;
-    transform: translate(0, -0); /* Returns to original position */
+    transform: translate(0, -0);
 }
 
-.slot7 p {
+.slot7 .title {
     position: absolute;
     font-size: 36px;
     text-transform: uppercase;
     font-weight: bolder;
     bottom: -15px;
-    left: 20px;
+    left: 30px;
 }
 
 .slot8 {
-    z-index: -1;
     position: absolute;
     top: 1261px;
     left: 50%;
     background-color: white;
     width: 450px;
     height: 300px;
-    transform: translate(450px, -0); /* Returns to original position */
+    transform: translate(450px, -0);
 }
 
-.slot8 p {
+.slot8 .title {
     position: absolute;
     font-size: 36px;
     text-transform: uppercase;
     font-weight: bolder;
     bottom: -15px;
-    left: 20px;
+    left: 30px;
 }
-
-/* .scroll-img img {
-    position: absolute;
-    top: 25px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
-
-/* .scroll-img {
-    width: 400px;
-    height: 400px;
-    background-image: url('img/arrow-scroll.png');
-    background-size: contain; 
-    background-repeat: no-repeat; 
-    background-position: center; 
-    margin: auto; 
-    position: absolute;
-    top: 660px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 100%;
-    z-index: 20;
-} */
 
 header {
     z-index: 10;
@@ -309,7 +417,7 @@ header button {
 .header-guideline-left {
     position: fixed;
     top: 0;
-    bottom: 958px;
+    bottom: 880px;
     left: 50%;
     width: 1px;
     background-color: #bbb;
@@ -320,7 +428,7 @@ header button {
 .header-guideline-right {
     position: fixed;
     top: 0;
-    bottom: 958px;
+    bottom: 880px;
     left: 50%;
     width: 1px;
     background-color: #bbb;
@@ -346,7 +454,7 @@ header button {
     left: 50%;
     width: 1px;
     background-color: #bbb;
-    z-index: 0;
+    z-index: 2;
 }
 
 .ver-guideline-right {
@@ -399,7 +507,7 @@ header button {
     width: 100%;
     height: 1px;
     background-color: #bbb;
-    z-index: 0;
+    z-index: 2;
 }
 
 .hor-guideline-5 {
@@ -409,7 +517,7 @@ header button {
     width: 100%;
     height: 1px;
     background-color: #bbb;
-    z-index: 0;
+    z-index: 2;
 }
 
 .hor-guideline-6 {
@@ -419,7 +527,7 @@ header button {
     width: 100%;
     height: 1px;
     background-color: #bbb;
-    z-index: 0;
+    z-index: 2;
 }
 
 .hor-guideline-7 {
