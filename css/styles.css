@@ -91,7 +91,7 @@ body {
     }
 }
 
-/* initial slots state */
+/* Initial slots state */
 .slot1,
 .slot2,
 .slot3,
@@ -103,19 +103,40 @@ body {
     z-index: 0;
     position: absolute;
     background-color: white;
-    transition: background-color 0.3s ease;
+    overflow: hidden; /* Ensure pseudo-elements stay within bounds */
+    transition: background-color 0.3s ease; /* Fallback for browsers without pseudo-elements */
 }
 
-/* when overing slots */
-.slot1:hover,
-.slot2:hover,
-.slot3:hover,
-.slot4:hover,
-.slot5:hover,
-.slot6:hover,
-.slot7:hover,
-.slot8:hover {
+/* Pseudo-element for orange overlay */
+.slot1::before,
+.slot2::before,
+.slot3::before,
+.slot4::before,
+.slot5::before,
+.slot6::before,
+.slot7::before,
+.slot8::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Start completely off the left edge */
+    width: 100%;
+    height: 100%;
     background-color: #ff5900;
+    z-index: -1; /* Place behind any text but above the white background */
+    transition: left 0.3s ease; /* Smooth transition effect */
+}
+
+/* Hover effect: Slide in the orange layer */
+.slot1:hover::before,
+.slot2:hover::before,
+.slot3:hover::before,
+.slot4:hover::before,
+.slot5:hover::before,
+.slot6:hover::before,
+.slot7:hover::before,
+.slot8:hover::before {
+    left: 0; /* Move the orange layer fully into view */
 }
 
 .slot1 .title,
