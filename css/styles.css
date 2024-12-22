@@ -1,7 +1,6 @@
-
 :root {
     --transition-duration-ease: 0.5s ease;
-  }
+}
 
 body {
     font-family: 'Unbounded', sans-serif;
@@ -10,6 +9,28 @@ body {
     background-color: #E4E4E4;
     overflow-x: hidden;
     height: 6000px;
+}
+
+.header-background-1 {
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    height: 600px;
+    width: 450px;
+    background-color: #E4E4E4;
+    background-image: repeating-linear-gradient(45deg, #666, #666 1px, transparent 1px, transparent 12px);
+    transform: translateX(-450px);
+}
+
+.header-background-2 {
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    height: 600px;
+    width: 1200px;
+    background-color: #E4E4E4;
+    background-image: repeating-linear-gradient(45deg, #666, #666 1px, transparent 1px, transparent 12px);
+    transform: translateX(450px);
 }
 
 .scroll {
@@ -269,8 +290,10 @@ body {
     background-color: #a13800;
     position: absolute;
     top: 60px;
-    clip-path: inset(0 100% 0 0); /* Initially hide the line */
-    transition: clip-path var(--transition-duration-ease); /* Smooth reveal effect */
+    clip-path: inset(0 100% 0 0);
+    /* Initially hide the line */
+    transition: clip-path var(--transition-duration-ease);
+    /* Smooth reveal effect */
 }
 
 .slot1:hover .line,
@@ -301,7 +324,6 @@ body {
     position: absolute;
     top: 961px;
     left: 50%;
-
     width: 450px;
     height: 300px;
     transform: translate(0, -0);
@@ -447,7 +469,7 @@ header button {
     z-index: -1;
     width: 100%;
     text-align: center;
-    opacity: 5%;
+    opacity: 0%;
 }
 
 .container img {
@@ -608,24 +630,24 @@ header button {
     top: 176px;
     width: 2000%;
     height: 210px;
-    background-image: url("../img/text1.png");
+    background-image: url("../img/head_text1.png");
     background-repeat: repeat-x;
     background-size: auto;
     background-position: 0 0;
-    animation: scroll-right-to-left 320s linear infinite;
+    animation: scroll-right-to-left 720s linear infinite;
 }
 
 .animated_text2 {
     z-index: 5;
     position: relative;
-    top: 110px;
+    top: 160px;
     width: 2000%;
     height: 260px;
-    background-image: url("../img/text2.png");
+    background-image: url("../img/head_text2.png");
     background-repeat: repeat-x;
     background-size: auto;
     background-position: 0 0;
-    animation: scroll-left-to-right 320s linear infinite;
+    animation: scroll-left-to-right 720s linear infinite;
 }
 
 @keyframes scroll-right-to-left {
