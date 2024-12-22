@@ -53,6 +53,28 @@ body {
     transform: translateX(450px);
 }
 
+.header-background-a3 {
+    z-index: -5;
+    position: absolute;
+    left: 50%;
+    top: 960px;
+    height: 300px;
+    width: 1350px;
+    background-color: #eaeaea;
+    transform: translateX(-1350px);
+}
+
+.header-background-b3 {
+    z-index: -5;
+    position: absolute;
+    left: 50%;
+    top: 1260px;
+    height: 300px;
+    width: 1350px;
+    background-color: #eaeaea;
+    transform: translateX(-0px);
+}
+
 .header-background-1 {
     position: absolute;
     left: 50%;
