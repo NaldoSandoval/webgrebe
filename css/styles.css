@@ -1,3 +1,8 @@
+
+:root {
+    --transition-duration-ease: 0.5s ease;
+  }
+
 body {
     font-family: 'Unbounded', sans-serif;
     margin: 0;
@@ -56,11 +61,23 @@ body {
     }
 }
 
-.titlebox {
+#services .titlebox {
     z-index: 5;
     position: absolute;
     left: 50%;
     top: 1362px;
+    width: 900px;
+    height: 50px;
+    background-color: black;
+    transform: translate(-449px, -451px);
+    overflow: hidden;
+}
+
+#projects .titlebox {
+    z-index: 5;
+    position: absolute;
+    left: 50%;
+    top: 2411px;
     width: 900px;
     height: 50px;
     background-color: black;
@@ -75,6 +92,7 @@ body {
 }
 
 .marquee h3 {
+    font-weight: 300;
     left: -700px;
     position: relative;
     font-size: 24px;
@@ -105,9 +123,7 @@ body {
     position: absolute;
     background-color: white;
     overflow: hidden;
-    /* Ensure pseudo-elements stay within bounds */
-    transition: background-color 0.3s ease;
-    /* Fallback for browsers without pseudo-elements */
+    transition: background-color var(--transition-duration-ease);
 }
 
 /* Pseudo-element for orange overlay */
@@ -123,14 +139,11 @@ body {
     position: absolute;
     top: 0;
     left: -100%;
-    /* Start completely off the left edge */
     width: 100%;
     height: 100%;
     background-color: #ff5900;
     z-index: -1;
-    /* Place behind any text but above the white background */
-    transition: left 0.3s ease;
-    /* Smooth transition effect */
+    transition: left var(--transition-duration-ease);
 }
 
 /* Hover effect: Slide in the orange layer */
@@ -161,7 +174,7 @@ body {
     bottom: -15px;
     left: 30px;
     opacity: 1;
-    transition: background-color 0.3s ease;
+    transition: background-color var(--transition-duration-ease);
 }
 
 .slot1:hover .title,
@@ -173,7 +186,7 @@ body {
 .slot7:hover .title,
 .slot8:hover .title {
     opacity: 0%;
-    transition: opacity 0.3s ease;
+    transition: opacity var(--transition-duration-ease);
     color: black;
 }
 
@@ -188,7 +201,7 @@ body {
     position: absolute;
     float: right;
     opacity: 0%;
-    transition: opacity 0.3s ease;
+    transition: opacity var(--transition-duration-ease);
     opacity: 0%;
     margin: 20px 30px;
     color: rgba(0, 0, 0, 0.8);
@@ -206,7 +219,7 @@ body {
 .slot8:hover .over-title {
     opacity: 100%;
     transition-delay: 1s;
-    transition: opacity 0.3s ease;
+    transition: opacity var(--transition-duration-ease);
 }
 
 .slot1 .over-description,
@@ -220,7 +233,7 @@ body {
     position: absolute;
     bottom: 0;
     opacity: 0%;
-    transition: opacity 0.3s ease;
+    transition: opacity var(--transition-duration-ease);
     padding-left: 30px;
     padding-right: 60px;
     color: rgba(0, 0, 0, 0.8);
@@ -238,7 +251,7 @@ body {
 .slot8:hover .over-description {
     opacity: 100%;
     transition-delay: 1s;
-    transition: opacity 0.3s ease;
+    transition: opacity var(--transition-duration-ease);
 }
 
 /* Line reveal effect */
@@ -253,11 +266,11 @@ body {
     display: block;
     width: 100%;
     height: 1px;
-    background-color: #702700;
+    background-color: #a13800;
     position: absolute;
     top: 60px;
     clip-path: inset(0 100% 0 0); /* Initially hide the line */
-    transition: clip-path 0.3s ease; /* Smooth reveal effect */
+    transition: clip-path var(--transition-duration-ease); /* Smooth reveal effect */
 }
 
 .slot1:hover .line,
@@ -268,8 +281,7 @@ body {
 .slot6:hover .line,
 .slot7:hover .line,
 .slot8:hover .line {
-    clip-path: inset(0 0 0 0); /* Reveal the line */
-    /* transition-delay: 0.15s;  */
+    clip-path: inset(0 0 0 0);
 }
 
 .slot1 {
@@ -562,7 +574,7 @@ header button {
 
 .hor-guideline-7 {
     position: absolute;
-    top: 2160px;
+    top: 2010px;
     left: 0;
     width: 100%;
     height: 1px;
@@ -572,22 +584,22 @@ header button {
 
 .hor-guideline-8 {
     position: absolute;
+    top: 2310px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #bbb;
+    z-index: 2;
+}
+
+.hor-guideline-9 {
+    position: absolute;
     top: 2610px;
     left: 0;
     width: 100%;
     height: 1px;
     background-color: #bbb;
-    z-index: 0;
-}
-
-.hor-guideline-9 {
-    position: absolute;
-    top: 3060px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #bbb;
-    z-index: 0;
+    z-index: 2;
 }
 
 .animated_text1 {
@@ -680,4 +692,37 @@ header button {
     height: 900px;
     z-index: -1;
     transform: translateX(451px);
+}
+
+.inbetween1 {
+    position: absolute;
+    left: 50%;
+    top: 1560px;
+    height: 450px;
+    width: 900px;
+    background-color: black;
+    transform: translateX(-1350px);
+}
+
+.inbetween2 {
+    position: absolute;
+    left: 50%;
+    top: 1560px;
+    height: 450px;
+    width: 450px;
+    background-color: #E4E4E4;
+    background-image: repeating-linear-gradient(45deg, #000, #000 1px, transparent 1px, transparent 12px);
+    transform: translateX(-450px);
+}
+
+.project1 {
+    position: absolute;
+    left: 50%;
+    top: 2010px;
+    height: 600px;
+    width: 1350px;
+    background-color: white;
+    /* background-image: linear-gradient(45deg, #000 1px, transparent 1px); */
+    background-size: 12px 12px;
+    transform: translateX(-900px);
 }
