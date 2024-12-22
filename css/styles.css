@@ -11,6 +11,48 @@ body {
     height: 6000px;
 }
 
+.header-background-a {
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    height: 600px;
+    width: 900px;
+    background-color: #eaeaea;
+    transform: translateX(-1350px);
+}
+
+.header-background-b {
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    height: 600px;
+    width: 450px;
+    background-color: #eaeaea;
+    transform: translateX(0px);
+}
+
+.header-background-a2 {
+    z-index: -5;
+    position: absolute;
+    left: 50%;
+    top: 360px;
+    height: 600px;
+    width: 450px;
+    background-color: #eaeaea;
+    transform: translateX(-450px);
+}
+
+.header-background-b2 {
+    z-index: -5;
+    position: absolute;
+    left: 50%;
+    top: 360px;
+    height: 600px;
+    width: 900px;
+    background-color: #eaeaea;
+    transform: translateX(450px);
+}
+
 .header-background-1 {
     position: absolute;
     left: 50%;
