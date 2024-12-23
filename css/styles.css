@@ -1030,6 +1030,8 @@ header button {
     overflow: hidden;
     /* Ensure pseudo-elements stay within bounds */
     transition: background-color 0.3s ease;
+    transition-delay: 0.3s; /* Delay before the animation starts */
+
 }
 
 .front-text {
@@ -1055,7 +1057,7 @@ header button {
     opacity: 0; /* Fade out */
     transition-delay: 0.3s; /* Delay for the over-text fade-in */
     transform: translateX(0); /* Default position */
-    transition: opacity 0.3s ease, transform 60s linear; /* Smooth marquee effect */
+    transition: opacity 0.3s ease, transform 60s linear; 
 }
 
 /* Hover state */
@@ -1098,7 +1100,6 @@ header button {
     z-index: -1;
     transition: left 0.3s ease;
     transition-delay: 0.3s;
-    /* Delay before the animation starts */
 }
 
 .project1 button .front-text:not(:hover)::before{
