@@ -273,7 +273,6 @@ body {
   left: 30px;
   opacity: 1;
   transition: opacity var(--transition-duration-ease);
-  /* transition-delay: var(--anim-delay); */
 }
 
 .slot1:hover .title,
@@ -297,7 +296,6 @@ body {
 .slot8:not(:hover) .title {
   opacity: 1;
   transition-delay: 1s;
-  /* var(--anim-delay); */
 }
 
 .slot1 .over-title,
@@ -743,6 +741,96 @@ header button {
     z-index: 2;
 }
 
+.hor-guideline-10 {
+    position: absolute;
+    top: 3060px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #bbb;
+    z-index: 2;
+}
+
+.hor-guideline-11 {
+    position: absolute;
+    top: 3360px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #bbb;
+    z-index: 2;
+}
+
+.hor-guideline-12 {
+    position: absolute;
+    top: 3660px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #bbb;
+    z-index: 2;
+}
+
+.hor-guideline-13 {
+    position: absolute;
+    top: 4110px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #bbb;
+    z-index: 2;
+}
+
+.hor-guideline-14 {
+    position: absolute;
+    top: 4410px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #bbb;
+    z-index: 2;
+}
+
+.hor-guideline-15 {
+    position: absolute;
+    top: 4710px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #bbb;
+    z-index: 2;
+}
+
+.hor-guideline-16 {
+    position: absolute;
+    top: 5160px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #bbb;
+    z-index: 2;
+}
+
+.hor-guideline-17 {
+    position: absolute;
+    top: 5460px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #bbb;
+    z-index: 2;
+}
+
+.hor-guideline-18 {
+    position: absolute;
+    top: 5760px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #bbb;
+    z-index: 2;
+}
+
 .animated_text1 {
     z-index: 5;
     position: relative;
@@ -863,7 +951,17 @@ header button {
     height: 600px;
     width: 1350px;
     background-color: white;
-    /* background-image: linear-gradient(45deg, #000 1px, transparent 1px); */
+    background-size: 12px 12px;
+    transform: translateX(-900px);
+}
+
+.project2 {
+    position: absolute;
+    left: 50%;
+    top: 3060px;
+    height: 600px;
+    width: 1350px;
+    background-color: white;
     background-size: 12px 12px;
     transform: translateX(-900px);
 }
@@ -871,6 +969,12 @@ header button {
 /* projects */
 
 .project1 div {
+    position: absolute;
+    top: -10px;
+    left: 900px;
+}
+
+.project2 div {
     position: absolute;
     top: -10px;
     left: 900px;
@@ -893,7 +997,6 @@ header button {
 }
 
 .project-description {
-
     font-family: 'Barlow', sans-serif;
     font-size: 18px;
     margin-left: 30px;
@@ -908,7 +1011,7 @@ header button {
     background-color: #bbb;
 }
 
-.project1 button {
+.project1 button, .project2 button {
     border-top: solid 1px #999;
     border-left: none;
     border-bottom: none;
