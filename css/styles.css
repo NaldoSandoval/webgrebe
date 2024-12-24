@@ -9,7 +9,7 @@ body {
     padding: 0;
     background-color: #E4E4E4;
     overflow-x: hidden;
-    height: 8000px;
+    height: 10000px;
 }
 
 .header-background-a {
@@ -164,6 +164,18 @@ body {
     position: absolute;
     left: 50%;
     top: 2411px;
+    width: 900px;
+    height: 50px;
+    background-color: black;
+    transform: translate(-449px, -451px);
+    overflow: hidden;
+}
+
+#about .titlebox {
+    z-index: 5;
+    position: absolute;
+    left: 50%;
+    top: 8712px;
     width: 900px;
     height: 50px;
     background-color: black;
@@ -651,185 +663,50 @@ header button {
 
 /* Horizontal Guidelines */
 
-.hor-guideline-1 {
+.hor-guideline {
     position: absolute;
-    top: 180px;
     left: 0;
     width: 100%;
     height: 1px;
     background-color: #bbb;
+}
+
+.hor-guideline.z-index-0 {
     z-index: 0;
 }
 
-.hor-guideline-2 {
-    position: absolute;
-    top: 576px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #bbb;
-    z-index: 0;
-}
-
-.hor-guideline-3 {
-    position: absolute;
-    top: 660px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #bbb;
-    z-index: 0;
-}
-
-.hor-guideline-4 {
-    position: absolute;
-    top: 960px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #bbb;
+.hor-guideline.z-index-2 {
     z-index: 2;
 }
 
-.hor-guideline-5 {
-    position: absolute;
-    top: 1260px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #bbb;
-    z-index: 2;
-}
-
-.hor-guideline-6 {
-    position: absolute;
-    top: 1560px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #bbb;
-    z-index: 2;
-}
-
-.hor-guideline-7 {
-    position: absolute;
-    top: 2010px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #bbb;
-    z-index: 0;
-}
-
-.hor-guideline-8 {
-    position: absolute;
-    top: 2310px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #bbb;
-    z-index: 2;
-}
-
-.hor-guideline-9 {
-    position: absolute;
-    top: 2610px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #bbb;
-    z-index: 2;
-}
-
-.hor-guideline-10 {
-    position: absolute;
-    top: 3060px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #bbb;
-    z-index: 2;
-}
-
-.hor-guideline-11 {
-    position: absolute;
-    top: 3360px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #bbb;
-    z-index: 2;
-}
-
-.hor-guideline-12 {
-    position: absolute;
-    top: 3660px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #bbb;
-    z-index: 2;
-}
-
-.hor-guideline-13 {
-    position: absolute;
-    top: 4110px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #bbb;
-    z-index: 2;
-}
-
-.hor-guideline-14 {
-    position: absolute;
-    top: 4410px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #bbb;
-    z-index: 2;
-}
-
-.hor-guideline-15 {
-    position: absolute;
-    top: 4710px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #bbb;
-    z-index: 2;
-}
-
-.hor-guideline-16 {
-    position: absolute;
-    top: 5160px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #bbb;
-    z-index: 2;
-}
-
-.hor-guideline-17 {
-    position: absolute;
-    top: 5460px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #bbb;
-    z-index: 2;
-}
-
-.hor-guideline-18 {
-    position: absolute;
-    top: 5760px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #bbb;
-    z-index: 2;
-}
+/* Individual top positions */
+.hor-guideline-1 { top: 180px; }
+.hor-guideline-2 { top: 576px; }
+.hor-guideline-3 { top: 660px; }
+.hor-guideline-4 { top: 960px; }
+.hor-guideline-5 { top: 1260px; }
+.hor-guideline-6 { top: 1560px; }
+.hor-guideline-7 { top: 2010px; }
+.hor-guideline-8 { top: 2310px; }
+.hor-guideline-9 { top: 2610px; }
+.hor-guideline-10 { top: 3060px; }
+.hor-guideline-11 { top: 3360px; }
+.hor-guideline-12 { top: 3660px; }
+.hor-guideline-13 { top: 4110px; }
+.hor-guideline-14 { top: 4410px; }
+.hor-guideline-15 { top: 4710px; }
+.hor-guideline-16 { top: 5160px; }
+.hor-guideline-17 { top: 5460px; }
+.hor-guideline-18 { top: 5760px; }
+.hor-guideline-19 { top: 6210px; } /* +450 from 5760 */
+.hor-guideline-20 { top: 6510px; } /* +300 from 6210 */
+.hor-guideline-21 { top: 6810px; } /* +300 from 6510 */
+.hor-guideline-22 { top: 7260px; } /* +450 from 6810 */
+.hor-guideline-23 { top: 7560px; } /* +300 from 7260 */
+.hor-guideline-24 { top: 7860px; } /* +300 from 7560 */
+.hor-guideline-25 { top: 8310px; } /* +450 from 7860 */
+.hor-guideline-26 { top: 8610px; } /* +300 from 8310 */
+.hor-guideline-27 { top: 8910px; } /* +300 from 8610 */
 
 .animated_text1 {
     z-index: 5;
@@ -1163,4 +1040,29 @@ header button {
 .project button:hover .line {
     clip-path: inset(0 0 0 0);
     transition-delay: 0.15s;
+}
+
+/* /about */
+
+#about .body {
+    position: absolute;
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+    left: 50%;
+    top: 8310px;
+    background-color: white;
+    height: 600px;
+    width: 1750px;
+    transform: translateX(-900px); 
+}
+
+#about .body-bg {
+    z-index: -1;
+    position: absolute;
+    left: 0%;
+    top: 8310px;
+    background-color: white;
+    height: 600px;
+    width: 3050px;
+    background-image: repeating-linear-gradient(45deg, #666, #666 1px, transparent 1px, transparent 12px);
 }
