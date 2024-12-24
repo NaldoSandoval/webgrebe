@@ -951,39 +951,65 @@ header button {
     width: 1350px;
     background-color: white;
     background-size: 12px 12px;
-    transform: translateX(-900px);
 }
 
 .project1 {
     top: 2010px;
+    transform: translateX(-900px);
 }
 
 .project2 {
     top: 3060px;
+    transform: translateX(-450px);
 }
 
 .project3 {
     top: 4110px;
+    transform: translateX(-900px);
 }
 
 .project4 {
     top: 5160px;
+    transform: translateX(-450px);
 }
 
 .project5 {
     top: 6210px;
+    transform: translateX(-900px);
 }
 
 .project6 {
     top: 7260px;
+    transform: translateX(-450px);
 }
 
 /* projects */
 
-.project div {
+.project1 div,
+.project3 div,
+.project5 div {
+    /* background-color: #999; */
     position: absolute;
     top: -10px;
     left: 900px;
+    width: 450px;
+}
+
+.project2 div,
+.project4 div,
+.project6 div {
+    /* background-color: #999; */
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    width: 450px;
+}
+
+.project2 img,
+.project4 img,
+.project6 img {
+    position: absolute;
+    right: 0px;
 }
 
 .project-title {
