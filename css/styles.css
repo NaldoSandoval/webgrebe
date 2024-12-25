@@ -707,6 +707,7 @@ header button {
 .hor-guideline-25 { top: 8310px; } /* +450 from 7860 */
 .hor-guideline-26 { top: 8610px; } /* +300 from 8310 */
 .hor-guideline-27 { top: 8910px; } /* +300 from 8610 */
+.hor-guideline-28 { top: 9270px; } /* +300 from 8610 */
 
 .animated_text1 {
     z-index: 5;
@@ -1051,9 +1052,16 @@ header button {
     left: 50%;
     top: 8310px;
     background-color: white;
-    height: 600px;
+    height: 960px;
     width: 1750px;
     transform: translateX(-900px); 
+}
+
+#about img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 40%;
 }
 
 #about .body-bg {
@@ -1062,7 +1070,7 @@ header button {
     left: 0%;
     top: 8310px;
     background-color: white;
-    height: 600px;
-    width: 3050px;
+    height: 960px;
+    width: 3060px;
     background-image: repeating-linear-gradient(45deg, #666, #666 1px, transparent 1px, transparent 12px);
 }
