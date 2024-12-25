@@ -1141,3 +1141,36 @@ header button {
 #about .fill-slot1::after {
     transform: rotate(-56.5deg);
 }
+
+#about .fill-slot2 {
+    position: absolute;
+    top: 0;
+    left: 1350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+}
+
+#about .fill-slot3 {
+    position: absolute;
+    top: 300px;
+    left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+}
+
+#about .fill-slot4 {
+    position: absolute;
+    top: 630px;
+    left: 1125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+}
