@@ -1150,7 +1150,7 @@ header button {
     top: 8310px;
     background-color: white;
     height: 960px;
-    width: 1750px;
+    width: 1800px;
     transform: translateX(-900px);
 }
 
@@ -1246,7 +1246,7 @@ header button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 450px;
     height: 300px;
 }
 
@@ -1268,7 +1268,7 @@ header button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 450px;
     height: 300px;
 }
 
