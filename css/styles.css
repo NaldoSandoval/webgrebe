@@ -1352,7 +1352,7 @@ header button {
     height: 900px;
     background-color: black;
     transform: translateX(-450px);
-    background-image: repeating-linear-gradient(45deg, #666, #666 1px, transparent 1px, transparent 12px);
+    background-image: repeating-linear-gradient(45deg, #333, #333 1px, transparent 1px, transparent 12px);
 }
 
 #contact .titlebox {
@@ -1413,5 +1413,81 @@ header button {
     align-items: center;
     font-size: 42px;
     font-weight: normal;
+    color: white;
+}
+
+#contact .box-x {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    width: 452px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+#contact .box-x::before,
+#contact .box-x::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 180%;
+    background-color: #bbb;
+}
+
+#contact .box-x::before {
+    transform: rotate(56.5deg);
+}
+
+#contact .box-x::after {
+    transform: rotate(-56.5deg);
+}
+
+#contact .box-mail {
+    position: absolute;
+    top: 300px;
+    left: 450px;
+    width: 1350px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(22, 22, 22);
+    overflow: hidden; /* Ensures the pseudo-element stays within bounds */
+    transition: background-color 0.3s ease; /* Smooth transition for default background */
+}
+
+#contact .box-mail a {
+    font-family: 'Barlow', sans-serif;
+    font-size: 92px;
+    color: #666;
+    text-decoration: none;
+    position: relative; /* Position for z-index stacking */
+    z-index: 1; /* Ensures text stays above the layer */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Pseudo-element for the animated layer */
+#contact .box-mail::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Start position outside the box */
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 0; /* Ensures it is below the text */
+    transition: left var(--transition-duration-ease);
+}
+
+/* Hover effect: Animate the layer from left to right */
+#contact .box-mail:hover::before {
+    left: 0; /* Bring the layer fully into view */
+}
+
+/* Hover effect: Change text color */
+#contact .box-mail:hover a {
     color: white;
 }
