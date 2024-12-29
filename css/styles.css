@@ -609,25 +609,27 @@ header button {
 }
 
 .header-guideline-left {
-    position: fixed;
+    position: fixed; 
     top: 0;
-    bottom: 880px;
+    height: 102px; 
     left: 50%;
     width: 1px;
     background-color: #bbb;
-    z-index: 10;
+    z-index: 15;
     transform: translateX(450px);
+    overflow: hidden; 
 }
 
 .header-guideline-right {
-    position: fixed;
+    position: fixed; 
     top: 0;
-    bottom: 880px;
+    height: 102px;
     left: 50%;
     width: 1px;
     background-color: #bbb;
-    z-index: 10;
+    z-index: 15;
     transform: translateX(-450px);
+    overflow: hidden; 
 }
 
 .ver-guideline-left {
@@ -934,6 +936,18 @@ header button {
     transform: translateX(-900px);
 }
 
+#services .complement {
+    position: absolute;
+    top: 961px;
+    left: 50%;
+    width: 1350px;
+    height: 600px;
+    background-color: white;
+    /* background-image: repeating-linear-gradient(45deg, #999, #999 1px, transparent 1px, transparent 12px); */
+    transform: translateX(900px);
+    border-left: 1px solid #bbb;
+}
+
 .project1 .complement,
 .project3 .complement,
 .project5 .complement {
@@ -942,25 +956,52 @@ header button {
     left: 0;
     width: 450px;
     height: 600px;
-    background-color: #ffffff;
+    background-color: #E4E4E4;
     background-image: repeating-linear-gradient(45deg, #999, #999 1px, transparent 1px, transparent 12px);
     transform: translateX(-450px);
     border-right: 1px solid #bbb;
 }
 
-.project2 .complement, 
+.project2 .complement,
 .project4 .complement,
 .project6 .complement {
     position: absolute;
     top: 0;
-    left: 450px;
-    width: 450px;
+    left: 0;
+    width: 900px;
     height: 600px;
-    background-color: #ffffff;
-    transform: translateX(900px);
-    border-right: 1px solid #bbb;
+    background-color: #E4E4E4;
     background-image: repeating-linear-gradient(45deg, #999, #999 1px, transparent 1px, transparent 12px);
+    transform: translateX(1350px);
+    border-right: 1px solid #bbb;
+}
 
+.project1 .post-complement,
+.project3 .post-complement,
+.project5 .post-complement {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1200px;
+    height: 600px;
+    border-top: 1px solid #bbb;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* background-image: repeating-linear-gradient(45deg, #999, #999 1px, transparent 1px, transparent 12px); */
+    transform: translateX(1350px);
+}
+
+.project2 .post-complement, 
+.project4 .post-complement,
+.project6 .post-complement {
+    position: absolute;
+    top: 0;
+    left: 450px;
+    width: 1200px;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: translateX(-1650px);
+    /* border-right: 1px solid #bbb; */
+    /* background-image: repeating-linear-gradient(45deg, #999, #999 1px, transparent 1px, transparent 12px); */
 }
 
 
