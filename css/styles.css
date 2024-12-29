@@ -187,7 +187,7 @@ body {
 .marquee {
     display: inline-block;
     white-space: nowrap;
-    animation: marquee 60s linear infinite;
+    animation: marquee 15s linear infinite;
 }
 
 .marquee h3 {
@@ -201,11 +201,11 @@ body {
 
 @keyframes marquee {
     from {
-        transform: translateX(70%);
+        transform: translateX(730px);
     }
 
     to {
-        transform: translateX(-70%);
+        transform: translateX(500px);
     }
 }
 
@@ -1324,8 +1324,10 @@ header button {
     width: 1300px;
     height: 300px;
     overflow: hidden;
-    transition: width 0.5s ease; /* Smooth transition for width */
-    transform-origin: right; /* Changes the origin for the width reduction */
+    transition: width 0.5s ease;
+    /* Smooth transition for width */
+    transform-origin: right;
+    /* Changes the origin for the width reduction */
 }
 
 #about .fill-slot7 {
@@ -1341,8 +1343,9 @@ header button {
     overflow: hidden;
 }
 
-#about .fill-slot7:hover + .fill-slot6 {
-    left: 0px; /* Shrinks .fill-slot6 to 0 on hover */
+#about .fill-slot7:hover+.fill-slot6 {
+    left: 0px;
+    /* Shrinks .fill-slot6 to 0 on hover */
 }
 
 #contact .body {
@@ -1390,70 +1393,14 @@ header button {
 #contact .c-marquee {
     display: inline-block;
     white-space: nowrap;
-    animation: contact-marquee 30s linear infinite; 
+    animation: contact-marquee 30s linear infinite;
 }
 
 @keyframes contact-marquee {
     from {
         transform: translateX(0px);
     }
-    to {
-        transform: translateX(-900px);
-    }
-}
 
-/* #contact {
-    position: absolute;
-    top: 9720px;
-    width: 3950px;
-    height: 900px;
-    background-color: black;
-    transform: translateX(-450px);
-    background-image: repeating-linear-gradient(45deg, #333, #333 1px, transparent 1px, transparent 12px);
-}
-
-#contact .titlebox {
-    z-index: 5;
-    position: absolute;
-    left: 902px;
-    width: 898px;
-    height: 300px;
-    background-color: black;
-    transform: translate(801px, 0);
-    overflow: hidden;
-}
-
-#contact .titlebox h3 {
-    position: relative;
-    top: -108px;
-    color: #3b3b3b;
-    font-size: 156px;
-    font-weight: bolder;
-}
-
-#contact .body {
-    z-index: 3;
-    position: absolute;
-    border-left: 1px solid #bbb;
-    border-right: 1px solid #bbb;
-    left: 50%;
-    top: 0;
-    background-color: black;
-    height: 900px;
-    width: 1800px;
-    transform: translateX(-50%);
-}
-
-#contact .c-marquee {
-    display: inline-block;
-    white-space: nowrap;
-    animation: contact-marquee 30s linear infinite; 
-}
-
-@keyframes contact-marquee {
-    from {
-        transform: translateX(0px);
-    }
     to {
         transform: translateX(-900px);
     }
@@ -1512,8 +1459,8 @@ header button {
     justify-content: center;
     align-items: center;
     background-color: rgb(22, 22, 22);
-    overflow: hidden; /
-    transition: background-color 0.3s ease; 
+    overflow: hidden; 
+    transition: background-color 0.3s ease;
 }
 
 #contact .box-mail a {
@@ -1521,25 +1468,25 @@ header button {
     font-size: 92px;
     color: #666;
     text-decoration: none;
-    position: relative; 
-    z-index: 1; 
-    transition: color 0.3s ease; 
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease;
 }
 
 #contact .box-mail::before {
     content: '';
     position: absolute;
     top: 0;
-    left: -100%; 
+    left: -100%;
     width: 100%;
     height: 100%;
     background-color: white;
-    z-index: 0; 
+    z-index: 0;
     transition: left var(--transition-duration-ease);
 }
 
 #contact .box-mail:hover::before {
-    left: 0; 
+    left: 0;
 }
 
 #contact .box-mail:hover a {
@@ -1553,9 +1500,9 @@ header button {
 #contact .fineprint p {
     position: absolute;
     top: 820px;
-    left: 505px;
+    left: 470px;
     width: 400px;
-    height: 50px;
+    height: 120px;
     font-family: Barlow, sans-serif;
     display: flex;
     justify-content: center;
@@ -1563,4 +1510,25 @@ header button {
     font-size: 14px;
     font-weight: normal;
     color: #666;
-} */
+}
+
+#bottom-footer {
+    position: relative;
+    z-index: 8;
+    top: 7602px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    border-top: #bbb 1px solid;
+}
+
+#bottom-footer span {
+    color: #999;
+}
