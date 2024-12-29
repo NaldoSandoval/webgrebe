@@ -1459,7 +1459,7 @@ header button {
     justify-content: center;
     align-items: center;
     background-color: rgb(22, 22, 22);
-    overflow: hidden; 
+    overflow: hidden;
     transition: background-color 0.3s ease;
 }
 
@@ -1510,6 +1510,89 @@ header button {
     font-size: 14px;
     font-weight: normal;
     color: #666;
+}
+
+#contact .socialmedia1 {
+    position: absolute;
+    top: 600px;
+    left: 0;
+    width: 450px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .socialmedia2 {
+    position: absolute;
+    top: 300px;
+    left: 450px;
+    width: 450px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .socialmedia3 {
+    position: absolute;
+    top: 0;
+    left: 900px;
+    width: 450px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .socialmedia4 {
+    position: absolute;
+    top: -300px;
+    left: 1350px;
+    width: 450px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .svg-icon {
+    cursor: pointer;
+    transition: fill 0.3s ease;
+}
+
+#contact .svg-icon {
+    position: relative;
+    cursor: pointer;
+    transition: fill 0.3s ease;
+    overflow: hidden;
+}
+
+#contact .svg-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(37, 37, 37);
+    z-index: 0;
+    transition: left var(--transition-duration-ease);
+}
+
+#contact .svg-icon:hover::before {
+    left: 0;
+}
+
+#contact .svg-icon:hover img {
+    opacity: 100%;
+}
+
+#contact .svg-icon img {
+    position: relative;
+    z-index: 1;
+    opacity: 30%;
+    transition: opacity 0.3s ease;
 }
 
 #bottom-footer {
