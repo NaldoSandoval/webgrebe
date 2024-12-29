@@ -934,6 +934,36 @@ header button {
     transform: translateX(-900px);
 }
 
+.project1 .complement,
+.project3 .complement,
+.project5 .complement {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 450px;
+    height: 600px;
+    background-color: #ffffff;
+    background-image: repeating-linear-gradient(45deg, #999, #999 1px, transparent 1px, transparent 12px);
+    transform: translateX(-450px);
+    border-right: 1px solid #bbb;
+}
+
+.project2 .complement, 
+.project4 .complement,
+.project6 .complement {
+    position: absolute;
+    top: 0;
+    left: 450px;
+    width: 450px;
+    height: 600px;
+    background-color: #ffffff;
+    transform: translateX(900px);
+    border-right: 1px solid #bbb;
+    background-image: repeating-linear-gradient(45deg, #999, #999 1px, transparent 1px, transparent 12px);
+
+}
+
+
 .project2 {
     top: 3060px;
     transform: translateX(-450px);
@@ -1575,7 +1605,7 @@ header button {
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(22, 22, 22);
     z-index: 0;
     transition: left var(--transition-duration-ease);
 }
@@ -1585,7 +1615,7 @@ header button {
 }
 
 #contact .svg-icon:hover img {
-    opacity: 100%;
+    opacity: 80%;
 }
 
 #contact .svg-icon img {
