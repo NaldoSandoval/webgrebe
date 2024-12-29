@@ -1345,7 +1345,64 @@ header button {
     left: 0px; /* Shrinks .fill-slot6 to 0 on hover */
 }
 
-#contact {
+#contact .body {
+    position: absolute;
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+    left: 50%;
+    top: 9720px;
+    background-color: black;
+    height: 960px;
+    width: 1800px;
+    transform: translateX(-900px);
+}
+
+#contact .body-bg {
+    z-index: -1;
+    position: absolute;
+    left: 0%;
+    top: 9720px;
+    background-color: black;
+    height: 960px;
+    width: 3060px;
+    background-image: repeating-linear-gradient(45deg, #666, #666 1px, transparent 1px, transparent 12px);
+}
+
+#contact .titlebox {
+    z-index: 5;
+    position: absolute;
+    left: 902px;
+    width: 898px;
+    height: 300px;
+    background-color: black;
+    transform: translate(0, 0);
+    overflow: hidden;
+}
+
+#contact .titlebox h3 {
+    position: relative;
+    top: -108px;
+    color: #3b3b3b;
+    font-size: 156px;
+    font-weight: bolder;
+}
+
+#contact .c-marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: contact-marquee 30s linear infinite; 
+}
+
+@keyframes contact-marquee {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(-900px);
+    }
+}
+
+/* #contact {
     position: absolute;
     top: 9720px;
     width: 3950px;
@@ -1379,18 +1436,18 @@ header button {
     position: absolute;
     border-left: 1px solid #bbb;
     border-right: 1px solid #bbb;
-    left: 1250px;
+    left: 50%;
     top: 0;
     background-color: black;
     height: 900px;
     width: 1800px;
-    transform: translateX(-450px);
+    transform: translateX(-50%);
 }
 
 #contact .c-marquee {
     display: inline-block;
     white-space: nowrap;
-    animation: contact-marquee 30s linear infinite; /* References your keyframes correctly */
+    animation: contact-marquee 30s linear infinite; 
 }
 
 @keyframes contact-marquee {
@@ -1455,8 +1512,8 @@ header button {
     justify-content: center;
     align-items: center;
     background-color: rgb(22, 22, 22);
-    overflow: hidden; /* Ensures the pseudo-element stays within bounds */
-    transition: background-color 0.3s ease; /* Smooth transition for default background */
+    overflow: hidden; /
+    transition: background-color 0.3s ease; 
 }
 
 #contact .box-mail a {
@@ -1464,30 +1521,46 @@ header button {
     font-size: 92px;
     color: #666;
     text-decoration: none;
-    position: relative; /* Position for z-index stacking */
-    z-index: 1; /* Ensures text stays above the layer */
-    transition: color 0.3s ease; /* Smooth color transition */
+    position: relative; 
+    z-index: 1; 
+    transition: color 0.3s ease; 
 }
 
-/* Pseudo-element for the animated layer */
 #contact .box-mail::before {
     content: '';
     position: absolute;
     top: 0;
-    left: -100%; /* Start position outside the box */
+    left: -100%; 
     width: 100%;
     height: 100%;
-    background-color: black;
-    z-index: 0; /* Ensures it is below the text */
+    background-color: white;
+    z-index: 0; 
     transition: left var(--transition-duration-ease);
 }
 
-/* Hover effect: Animate the layer from left to right */
 #contact .box-mail:hover::before {
-    left: 0; /* Bring the layer fully into view */
+    left: 0; 
 }
 
-/* Hover effect: Change text color */
 #contact .box-mail:hover a {
-    color: white;
+    color: black;
 }
+
+#contact .box-mail:hover {
+    cursor: pointer;
+}
+
+#contact .fineprint p {
+    position: absolute;
+    top: 820px;
+    left: 505px;
+    width: 400px;
+    height: 50px;
+    font-family: Barlow, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: normal;
+    color: #666;
+} */
