@@ -120,7 +120,8 @@ body {
 /* menu  */
 
 .menu .services {
-    transition: color 0.3s ease; /* Add transition for smooth color change */
+    transition: color 0.3s ease;
+    /* Add transition for smooth color change */
 }
 
 .menu .services span {
@@ -140,11 +141,13 @@ body {
 }
 
 .menu .services:hover {
-    color: white; /* Change this to the color you want */
+    color: white;
+    /* Change this to the color you want */
 }
 
 .menu .projects {
-    transition: color 0.3s ease; /* Add transition for smooth color change */
+    transition: color 0.3s ease;
+    /* Add transition for smooth color change */
 }
 
 .menu .projects span {
@@ -164,13 +167,15 @@ body {
 }
 
 .menu .projects:hover {
-    color: white; /* Change this to the color you want */
+    color: white;
+    /* Change this to the color you want */
 }
 
 /* // about  */
 
 .menu .about {
-    transition: color 0.3s ease; /* Add transition for smooth color change */
+    transition: color 0.3s ease;
+    /* Add transition for smooth color change */
 }
 
 .menu .about span {
@@ -190,7 +195,8 @@ body {
 }
 
 .menu .about:hover {
-    color: white; /* Change this to the color you want */
+    color: white;
+    /* Change this to the color you want */
 }
 
 .menu .link-hover {
@@ -676,7 +682,81 @@ header button {
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+header button:hover {
+    background-color: #ff5900; /* Adjust the hover background color if needed */
+}
+
+header button:hover span {
+    color: #ff5900;
+    transition: color 0.3s ease;
+}
+
+header button div {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    transition-delay: 0.3s;
+    animation: marquee 10s linear infinite; /* Add marquee effect */
+}
+
+/* Keyframes for marquee animation */
+@keyframes marquee {
+    from {
+        transform: translateX(100%); /* Start from the right */
+    }
+    to {
+        transform: translateX(-100%); /* End at the left */
+    }
+}
+
+header button:hover div {
+    white-space: nowrap;
+    overflow: hidden;
+    color: black;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+}
+
+.contact button div {
+    display: none;
+}
+
+/* .contact button {
+    position: relative;
+    overflow: hidden;
+}
+
+.contact button .hover-text {
+    position: absolute;
+    white-space: nowrap;
+    animation: marquee 5s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.contact button:hover .hover-text {
+    opacity: 1;
+}
+
+.contact button:hover span {
+    opacity: 0;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+} */
 
 .container-reference {
     position: absolute;
