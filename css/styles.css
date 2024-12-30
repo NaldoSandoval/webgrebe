@@ -117,6 +117,69 @@ body {
     align-items: center;
 }
 
+/* menu  */
+
+.menu .services span {
+    z-index: -1;
+    position: absolute;
+    top: -4px;
+    left: 47px;
+    transform: translateX(-50%);
+    width: 0;
+    height: 36px;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+.menu .services:hover span {
+    width: 140px;
+}
+
+.menu .services:hover {
+    color: white; /* Change this to the color you want */
+}
+
+.menu .projects span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 4px;
+    background-color: blue;
+    transition: width 0.3s ease;
+}
+
+.menu .projects:hover span {
+    width: 100%;
+}
+
+.menu .about span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 4px;
+    background-color: green;
+    transition: width 0.3s ease;
+}
+
+.menu .about:hover span {
+    width: 100%;
+}
+
+.menu .link-hover {
+    position: absolute;
+    bottom: -42px;
+    left: -22px;
+    width: 138px;
+    height: 106px;
+    background-color: var(--orange-color);
+    z-index: -1;
+    transition: background-color var(--transition-duration-ease);
+}
+
 .scroll-img {
     z-index: 5;
     position: absolute;
@@ -609,19 +672,19 @@ header button {
 }
 
 .header-guideline-left {
-    position: fixed; 
+    position: fixed;
     top: 0;
-    height: 102px; 
+    height: 102px;
     left: 50%;
     width: 1px;
     background-color: #bbb;
     z-index: 15;
     transform: translateX(450px);
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .header-guideline-right {
-    position: fixed; 
+    position: fixed;
     top: 0;
     height: 102px;
     left: 50%;
@@ -629,7 +692,7 @@ header button {
     background-color: #bbb;
     z-index: 15;
     transform: translateX(-450px);
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .ver-guideline-left {
@@ -986,7 +1049,7 @@ header button {
     transform: translateX(1350px);
 }
 
-.project2 .post-complement, 
+.project2 .post-complement,
 .project4 .post-complement,
 .project6 .post-complement {
     position: absolute;
