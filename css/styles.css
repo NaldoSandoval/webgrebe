@@ -807,10 +807,6 @@ header button {
     top: 10320px;
 }
 
-/* .hor-guideline-32 {
-    top: 10620px;
-} */
-
 .animated_text1 {
     z-index: 5;
     position: relative;
@@ -1058,22 +1054,26 @@ header button {
 }
 
 .project-title {
-    position: relative;
+    position: absolute;
     top: 5px;
     text-transform: uppercase;
     font-size: 28px;
     margin-left: 30px;
+    margin-right: 20px;
 }
 
 .project-client {
-    position: relative;
-    top: 0;
+    color: #666;
+    position: absolute;
+    top: 100PX;
     text-transform: uppercase;
     font-weight: bolder;
     margin-left: 30px;
 }
 
 .project-description {
+    position: absolute;
+    top: 150px;
     font-family: 'Barlow', sans-serif;
     font-size: 18px;
     margin-left: 30px;
@@ -1081,8 +1081,8 @@ header button {
 }
 
 .divider {
-    position: relative;
-    display: block;
+    position: absolute;
+    display: none;
     width: 100%;
     height: 1px;
     background-color: #bbb;
@@ -1094,8 +1094,8 @@ header button {
     border-bottom: none;
     border-right: none;
     background-color: white;
-    position: relative;
-    top: 256px;
+    position: absolute;
+    bottom: -610px;
     width: 100%;
     font-family: inherit;
     text-transform: uppercase;
