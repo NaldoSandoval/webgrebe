@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     // Smooth scroll to the contact section
-    document.querySelector(".contact button").addEventListener("click", function () {
+    document.querySelector(".contact-btn button").addEventListener("click", function () {
         const target = document.querySelector("#contact");
         const yOffset = 6600; // Adjust this value to account for fixed headers or desired offset
         const yPosition = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
