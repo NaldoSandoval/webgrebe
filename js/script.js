@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+
     // Smooth scroll to the contact section
     document.querySelector(".contact button").addEventListener("click", function () {
         const target = document.querySelector("#contact");
@@ -24,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const target = document.querySelector("#services");
         const yOffset = -2210; // Adjust this value for the desired offset
         const yPosition = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    
+
         window.scrollTo({
             top: yPosition,
             behavior: "smooth"
@@ -35,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const target = document.querySelector("#projects");
         const yOffset = -1160; // Adjust this value for the desired offset
         const yPosition = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    
+
         window.scrollTo({
             top: yPosition,
             behavior: "smooth"
@@ -46,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const target = document.querySelector("#about");
         const yOffset = 5140; // Adjust this value for the desired offset
         const yPosition = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    
+
         window.scrollTo({
             top: yPosition,
             behavior: "smooth"

@@ -697,19 +697,8 @@ header button:hover span {
 header button div {
     display: none;
     opacity: 0;
-    transition: opacity 0.3s ease;
-    transition-delay: 0.3s;
-    animation: marquee 10s linear infinite; /* Add marquee effect */
-}
-
-/* Keyframes for marquee animation */
-@keyframes marquee {
-    from {
-        transform: translateX(100%); /* Start from the right */
-    }
-    to {
-        transform: translateX(-100%); /* End at the left */
-    }
+    transition: opacity 1s ease;
+    transition-delay: 1s; /* Delay the appearance of the div */
 }
 
 header button:hover div {
@@ -727,36 +716,6 @@ header button:hover div {
 .contact button div {
     display: none;
 }
-
-/* .contact button {
-    position: relative;
-    overflow: hidden;
-}
-
-.contact button .hover-text {
-    position: absolute;
-    white-space: nowrap;
-    animation: marquee 5s linear infinite;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.contact button:hover .hover-text {
-    opacity: 1;
-}
-
-.contact button:hover span {
-    opacity: 0;
-}
-
-@keyframes marquee {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-} */
 
 .container-reference {
     position: absolute;
@@ -797,6 +756,16 @@ header button:hover div {
     z-index: 15;
     transform: translateX(-450px);
     overflow: hidden;
+}
+
+@media screen and (max-width: 1380px) {
+    .header-guideline-left {
+        display: none;
+    }
+
+    .header-guideline-right {
+        display: none;
+    }
 }
 
 .ver-guideline-left {
