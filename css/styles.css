@@ -108,13 +108,29 @@ body {
     width: 220px;
     height: 60px;
     position: absolute;
-    top: 660px;
+    top: 530px;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.scroll-img {
+    z-index: 5;
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    height: 32px;
+    width: 30px;
+    background-image: url('../img/scroll-arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: moveDown 1s infinite;
 }
 
 /* menu  */
@@ -210,22 +226,6 @@ body {
     transition: background-color var(--transition-duration-ease);
 }
 
-.scroll-img {
-    z-index: 5;
-    position: absolute;
-    top: 720px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: block;
-    height: 32px;
-    width: 30px;
-    background-image: url('../img/scroll-arrow.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    animation: moveDown 1s infinite;
-}
-
 /* Animation keyframes */
 @keyframes moveDown {
     0% {
@@ -313,12 +313,6 @@ body {
     transform: translateX(900px);
     border-left: 1px solid #bbb;
 }
-
-/* @media screen and (max-width: 1380px) {
-    #services {
-
-    }
-} */
 
 /* Initial slots state */
 .slot1,
@@ -872,15 +866,15 @@ header .contact-btn button:not(:hover) span {
 
 /* Individual top positions */
 .hor-guideline-1 {
-    top: 180px;
+    top: 132px;
 }
 
 .hor-guideline-2 {
-    top: 576px;
+    top: 450px;
 }
 
 .hor-guideline-3 {
-    top: 660px;
+    top: 532px;
 }
 
 .hor-guideline-4 {
