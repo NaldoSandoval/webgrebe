@@ -10,7 +10,7 @@ body {
     padding: 0;
     background-color: #E4E4E4;
     overflow-x: hidden;
-    height: 10600px;
+    height: 8480px;
 }
 
 .header-background-a {
@@ -646,7 +646,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 102px;
+    height: 81px;
     width: 100%;
     background-color: rgba(255, 255, 255, 1);
     border-bottom: 1px solid #999;
@@ -662,7 +662,7 @@ header .logo {
 header .logo img {
     position: relative;
     left: 60px;
-    width: 50%;
+    width: 40%;
     height: auto;
 }
 
@@ -688,13 +688,15 @@ header ul li {
     cursor: pointer;
 }
 
+/* contact button setting */
+
 header .contact-btn button {
     font-weight: bolder;
     text-transform: uppercase;
     font: inherit;
     position: relative;
     right: 90px;
-    padding: 10px 25px;
+    padding: 8px 20px; /* Reduced size by 20% */
     border: none;
     background-color: var(--orange-color);
     color: white;
@@ -704,7 +706,7 @@ header .contact-btn button {
 }
 
 header .contact-btn button:hover {
-    background-color: #ff5900; /* Adjust the hover background color if needed */
+    background-color: #ff5900; 
 }
 
 header .contact-btn button:hover span {
@@ -732,7 +734,7 @@ header .contact-btn button:hover div {
 
 header .contact-btn button div {
     position: absolute;
-    top: -6px!important;
+    top: -9px!important;
     visibility: hidden;
     white-space: nowrap;
     overflow: hidden;
@@ -787,12 +789,12 @@ header .contact-btn button:not(:hover) span {
 .header-guideline-left {
     position: fixed;
     top: 0;
-    height: 102px;
+    height:102px;
     left: 50%;
     width: 1px;
     background-color: #bbb;
     z-index: 15;
-    transform: translateX(450px);
+    transform: translateX(360px);
     overflow: hidden;
 }
 
@@ -804,7 +806,7 @@ header .contact-btn button:not(:hover) span {
     width: 1px;
     background-color: #bbb;
     z-index: 15;
-    transform: translateX(-450px);
+    transform: translateX(-360px);
     overflow: hidden;
 }
 
@@ -826,7 +828,7 @@ header .contact-btn button:not(:hover) span {
     width: 1px;
     background-color: #bbb;
     z-index: 1;
-    transform: translateX(450px);
+    transform: translateX(360px);
 }
 
 .ver-guideline-center {
@@ -847,7 +849,7 @@ header .contact-btn button:not(:hover) span {
     width: 1px;
     background-color: #bbb;
     z-index: 1;
-    transform: translateX(-450px);
+    transform: translateX(-360px);
 }
 
 /* Horizontal Guidelines */
