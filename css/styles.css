@@ -721,24 +721,39 @@ header .contact-btn button div {
 header .contact-btn button:hover div {
     white-space: nowrap;
     overflow: hidden;
-    color: black;
     visibility: visible;
     position: absolute;
     top: 10px;
     left: 0;
     width: 100%;
     opacity: 1;
-    transition-delay: 0.3s; /* Alternatively, you can specify delay here */
+    transition-delay: 0.3s;
 }
 
 header .contact-btn button div {
     position: absolute;
     top: -6px!important;
     visibility: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0; /* Initial opacity */
 }
 
-header .contact-btn button div p {
-    color: #672400;
+/* Marquee effect for <p> inside the div */
+header .contact-btn button:hover div p {
+    display: inline-block; /* Ensure the content remains inline for scrolling */
+    white-space: nowrap;
+    animation: contact-btn-marquee 5s linear infinite; /* Add animation for marquee */
+}
+
+/* Define the marquee animation */
+@keyframes contact-btn-marquee {
+    from {
+        transform: translateX(0); /* Start off-screen to the right */
+    }
+    to {
+        transform: translateX(-500px); /* End off-screen to the left */
+    }
 }
 
 .container-reference {
