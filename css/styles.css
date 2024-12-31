@@ -756,6 +756,17 @@ header .contact-btn button:hover div p {
     }
 }
 
+/* Mouse out effect */
+header .contact-btn button:not(:hover) div {
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+header .contact-btn button:not(:hover) span {
+    color: white;
+    transition: color 0.8s ease;
+}
+
 .container-reference {
     position: absolute;
     top: 0;
