@@ -998,12 +998,11 @@ header .contact-btn button:not(:hover) span {
 .animated_text1 {
     z-index: 5;
     position: relative;
-    top: 176px;
+    top: 132px;
     width: 2000%;
     height: 210px;
     background-image: url("../img/head_text1.png");
     background-repeat: repeat-x;
-    background-size: auto;
     background-position: 0 0;
     animation: scroll-right-to-left 720s linear infinite;
 }
@@ -1011,12 +1010,11 @@ header .contact-btn button:not(:hover) span {
 .animated_text2 {
     z-index: 5;
     position: relative;
-    top: 160px;
+    top: 72px;
     width: 2000%;
     height: 260px;
     background-image: url("../img/head_text2.png");
     background-repeat: repeat-x;
-    background-size: auto;
     background-position: 0 0;
     animation: scroll-left-to-right 720s linear infinite;
 }
