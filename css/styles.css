@@ -39,9 +39,9 @@ body {
     left: 50%;
     top: 360px;
     height: 412px;
-    width: 450px;
+    width: 360px;
     background-color: #eaeaea;
-    transform: translateX(-450px);
+    transform: translateX(-360px);
 }
 
 .header-background-b2 {
@@ -52,7 +52,7 @@ body {
     height: 412px;
     width: 900px;
     background-color: #eaeaea;
-    transform: translateX(450px);
+    transform: translateX(360px);
 }
 
 .header-background-a3 {
@@ -82,10 +82,10 @@ body {
     left: 50%;
     top: 60px;
     height: 472px;
-    width: 450px;
+    width: 360px;
     background-color: #E4E4E4;
     background-image: repeating-linear-gradient(45deg, #666, #666 1px, transparent 1px, transparent 12px);
-    transform: translateX(-450px);
+    transform: translateX(-360px);
 }
 
 .header-background-2 {
@@ -96,7 +96,7 @@ body {
     width: 1200px;
     background-color: #E4E4E4;
     background-image: repeating-linear-gradient(45deg, #666, #666 1px, transparent 1px, transparent 12px);
-    transform: translateX(450px);
+    transform: translateX(360px);
 }
 
 .scroll {
@@ -245,11 +245,11 @@ body {
     z-index: 5;
     position: absolute;
     left: 50%;
-    top: 2411px;
-    width: 900px;
+    top: 1922px;
+    width: 720px;
     height: 50px;
     background-color: black;
-    transform: translate(-449px, -451px);
+    transform: translate(-360px, -360px);
     overflow: hidden;
 }
 
@@ -865,19 +865,19 @@ header .contact-btn button:not(:hover) span {
 }
 
 .hor-guideline-7 {
-    top: 1492px;
+    top: 1612px;
 }
 
 .hor-guideline-8 {
-    top: 2310px;
+    top: 1852px;
 }
 
 .hor-guideline-9 {
-    top: 2610px;
+    top: 2092px;
 }
 
 .hor-guideline-10 {
-    top: 3060px;
+    top: 2452px;
 }
 
 .hor-guideline-11 {
@@ -1083,8 +1083,8 @@ header .contact-btn button:not(:hover) span {
 }
 
 .project1 {
-    top: 2010px;
-    transform: translateX(-900px);
+    top: 1612px;
+    transform: translateX(-720px);
 }
 
 .project1 .complement,
