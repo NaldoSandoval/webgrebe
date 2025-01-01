@@ -295,10 +295,10 @@ body {
     position: absolute;
     left: 50%;
     top: 1174px;
-    width: 900px;
+    width: 720px;
     height: 50px;
     background-color: black;
-    transform: translate(-449px, -451px);
+    transform: translate(-360px, -451px);
     overflow: hidden;
 }
 
@@ -435,6 +435,7 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 14px;
+    top: -8px;
 }
 
 .slot1:hover .over-title,
@@ -515,7 +516,7 @@ body {
     height: 1px;
     background-color: #a13800;
     position: absolute;
-    top: 60px;
+    top: 44px;
     clip-path: inset(0 100% 0 0);
     transition: clip-path var(--transition-duration-ease);
     transition-delay: var(--anim-delay);
