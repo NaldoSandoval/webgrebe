@@ -17,7 +17,7 @@ body {
     position: absolute;
     left: 50%;
     top: 60px;
-    height: 600px;
+    height: 472px;
     width: 900px;
     background-color: #eaeaea;
     transform: translateX(-1350px);
@@ -27,8 +27,8 @@ body {
     position: absolute;
     left: 50%;
     top: 60px;
-    height: 600px;
-    width: 450px;
+    height: 472px;
+    width: 360px;
     background-color: #eaeaea;
     transform: translateX(0px);
 }
@@ -38,7 +38,7 @@ body {
     position: absolute;
     left: 50%;
     top: 360px;
-    height: 600px;
+    height: 412px;
     width: 450px;
     background-color: #eaeaea;
     transform: translateX(-450px);
@@ -49,7 +49,7 @@ body {
     position: absolute;
     left: 50%;
     top: 360px;
-    height: 600px;
+    height: 412px;
     width: 900px;
     background-color: #eaeaea;
     transform: translateX(450px);
@@ -81,7 +81,7 @@ body {
     position: absolute;
     left: 50%;
     top: 60px;
-    height: 600px;
+    height: 472px;
     width: 450px;
     background-color: #E4E4E4;
     background-image: repeating-linear-gradient(45deg, #666, #666 1px, transparent 1px, transparent 12px);
@@ -92,7 +92,7 @@ body {
     position: absolute;
     left: 50%;
     top: 60px;
-    height: 600px;
+    height: 472px;
     width: 1200px;
     background-color: #E4E4E4;
     background-image: repeating-linear-gradient(45deg, #666, #666 1px, transparent 1px, transparent 12px);
@@ -878,19 +878,19 @@ header .contact-btn button:not(:hover) span {
 }
 
 .hor-guideline-4 {
-    top: 660px;
+    top: 772px;
 }
 
 .hor-guideline-5 {
-    top: 1260px;
+    top: 1012px;
 }
 
 .hor-guideline-6 {
-    top: 1560px;
+    top: 1252px;
 }
 
 .hor-guideline-7 {
-    top: 2010px;
+    top: 1492px;
 }
 
 .hor-guideline-8 {
