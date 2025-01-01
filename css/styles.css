@@ -294,7 +294,7 @@ body {
     z-index: 5;
     position: absolute;
     left: 50%;
-    top: 1362px;
+    top: 1174px;
     width: 900px;
     height: 50px;
     background-color: black;
@@ -304,13 +304,13 @@ body {
 
 #services .complement {
     position: absolute;
-    top: 961px;
+    top: 772px;
     left: 50%;
     width: 1350px;
-    height: 600px;
+    height: 480px;
     background-color: white;
     /* background-image: repeating-linear-gradient(45deg, #999, #999 1px, transparent 1px, transparent 12px); */
-    transform: translateX(900px);
+    transform: translateX(720px);
     border-left: 1px solid #bbb;
 }
 
@@ -384,10 +384,10 @@ body {
 .slot7 .title,
 .slot8 .title {
     position: absolute;
-    font-size: 36px;
+    font-size: 28px;
     text-transform: uppercase;
     font-weight: bolder;
-    bottom: -15px;
+    bottom: -5px;
     left: 30px;
     opacity: 1;
     transition: opacity var(--transition-duration-ease);
@@ -434,6 +434,7 @@ body {
     color: rgba(0, 0, 0, 0.8);
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 14px;
 }
 
 .slot1:hover .over-title,
@@ -467,15 +468,15 @@ body {
 .slot7 .over-description,
 .slot8 .over-description {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     opacity: 0%;
     transition: opacity var(--transition-duration-ease);
     transition-delay: var(--anim-delay);
     padding-left: 30px;
-    padding-right: 60px;
+    padding-right: 45px;
     color: rgba(0, 0, 0, 0.8);
     font-family: 'Barlow', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .slot1:hover .over-description,
@@ -547,49 +548,31 @@ body {
 }
 
 .slot2 {
-    top: 961px;
+    top: 772px;
     left: 50%;
     background-color: white;
-    width: 449px;
-    height: 300px;
-    transform: translate(-449px, 0);
+    width: 360px;
+    height: 240px;
+    transform: translate(-360px, 0);
 }
 
 .slot3 {
     position: absolute;
-    top: 961px;
+    top: 772px;
     left: 50%;
-    width: 450px;
-    height: 300px;
+    width: 360px;
+    height: 240px;
     transform: translate(0, -0);
-}
-
-.slot3 .title {
-    position: absolute;
-    font-size: 36px;
-    text-transform: uppercase;
-    font-weight: bolder;
-    bottom: -15px;
-    left: 30px;
 }
 
 .slot4 {
     position: absolute;
-    top: 961px;
+    top: 772px;
     left: 50%;
     background-color: white;
-    width: 450px;
-    height: 300px;
-    transform: translate(450px, -0);
-}
-
-.slot4 .title {
-    position: absolute;
-    font-size: 36px;
-    text-transform: uppercase;
-    font-weight: bolder;
-    bottom: -15px;
-    left: 30px;
+    width: 360px;
+    height: 240px;
+    transform: translate(360px, -0);
 }
 
 .slot5 {
@@ -598,41 +581,32 @@ body {
 
 .slot6 {
     position: absolute;
-    top: 1261px;
+    top: 1013px;
     left: 50%;
     background-color: white;
-    width: 449px;
-    height: 300px;
-    transform: translate(-449px, -0);
-}
-
-.slot6 .title {
-    position: absolute;
-    font-size: 36px;
-    text-transform: uppercase;
-    font-weight: bolder;
-    bottom: -15px;
-    left: 30px;
+    width: 360px;
+    height: 240px;
+    transform: translate(-360px, -0);
 }
 
 .slot7 {
     position: absolute;
-    top: 1261px;
+    top: 1013px;
     left: 50%;
     background-color: white;
-    width: 450px;
-    height: 300px;
+    width: 360px;
+    height: 240px;
     transform: translate(0, -0);
 }
 
 .slot8 {
     position: absolute;
-    top: 1261px;
+    top: 1013px;
     left: 50%;
     background-color: white;
-    width: 450px;
-    height: 300px;
-    transform: translate(450px, -0);
+    width: 360px;
+    height: 240px;
+    transform: translate(360px, -0);
 }
 
 header {
