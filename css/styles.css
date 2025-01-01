@@ -245,9 +245,9 @@ body {
     z-index: 5;
     position: absolute;
     left: 50%;
-    top: 1922px;
+    top: 1932px;
     width: 720px;
-    height: 50px;
+    height: 40px;
     background-color: black;
     transform: translate(-360px, -360px);
     overflow: hidden;
@@ -259,9 +259,9 @@ body {
     left: 50%;
     top: 8712px;
     width: 900px;
-    height: 50px;
+    height: 40px;
     background-color: black;
-    transform: translate(-449px, -451px);
+    transform: translate(-360px, -360px);
     overflow: hidden;
 }
 
@@ -275,9 +275,10 @@ body {
     font-weight: 300;
     left: -700px;
     position: relative;
-    font-size: 24px;
+    top: -2px;
+    font-size: 19.2px;
     color: white;
-    margin: 9px;
+    margin: 10px;
 }
 
 @keyframes marquee {
@@ -294,9 +295,9 @@ body {
     z-index: 5;
     position: absolute;
     left: 50%;
-    top: 1174px;
+    top: 1183px;
     width: 720px;
-    height: 50px;
+    height: 40px;
     background-color: black;
     transform: translate(-360px, -451px);
     overflow: hidden;
@@ -1076,14 +1077,14 @@ header .contact-btn button:not(:hover) span {
 .project {
     position: absolute;
     left: 50%;
-    height: 600px;
-    width: 1350px;
+    height: 480px;
+    width: 1080px;
     background-color: white;
     background-size: 12px 12px;
 }
 
 .project1 {
-    top: 1612px;
+    top: 1613px;
     transform: translateX(-720px);
 }
 
@@ -1093,12 +1094,12 @@ header .contact-btn button:not(:hover) span {
     position: absolute;
     top: 0;
     left: 0;
-    width: 450px;
-    height: 600px;
+    width: 360px;
+    height: 480px;
     background-color: #E4E4E4;
     background-image: repeating-linear-gradient(45deg, #999, #999 1px, transparent 1px, transparent 12px);
-    transform: translateX(-450px);
-    border-right: 1px solid #bbb;
+    transform: translateX(-360px);
+    /* border-right: 1px solid #bbb; */
 }
 
 .project2 .complement,
@@ -1107,8 +1108,8 @@ header .contact-btn button:not(:hover) span {
     position: absolute;
     top: 0;
     left: 0;
-    width: 900px;
-    height: 600px;
+    width: 720px;
+    height: 480px;
     background-color: #E4E4E4;
     background-image: repeating-linear-gradient(45deg, #999, #999 1px, transparent 1px, transparent 12px);
     transform: translateX(1350px);
@@ -1121,12 +1122,12 @@ header .contact-btn button:not(:hover) span {
     position: absolute;
     top: 0;
     left: 0;
-    width: 1200px;
-    height: 600px;
-    border-top: 1px solid #bbb;
+    width: 960px;
+    height: 480px;
+    /* border-top: 1px solid #bbb; */
     background-color: rgba(255, 255, 255, 0.5);
     /* background-image: repeating-linear-gradient(45deg, #999, #999 1px, transparent 1px, transparent 12px); */
-    transform: translateX(1350px);
+    transform: translateX(1080px);
 }
 
 .project2 .post-complement,
@@ -1134,11 +1135,11 @@ header .contact-btn button:not(:hover) span {
 .project6 .post-complement {
     position: absolute;
     top: 0;
-    left: 450px;
-    width: 1200px;
-    height: 600px;
+    left: 360px;
+    width: 960px;
+    height: 480px;
     background-color: rgba(255, 255, 255, 0.5);
-    transform: translateX(-1650px);
+    transform: translateX(-1320px);
     /* border-right: 1px solid #bbb; */
     /* background-image: repeating-linear-gradient(45deg, #999, #999 1px, transparent 1px, transparent 12px); */
 }
@@ -1176,8 +1177,8 @@ header .contact-btn button:not(:hover) span {
 .project5 div {
     position: absolute;
     top: -10px;
-    left: 900px;
-    width: 450px;
+    left: 720px;
+    width: 360px;
 }
 
 .project2 div,
@@ -1186,7 +1187,7 @@ header .contact-btn button:not(:hover) span {
     position: absolute;
     top: -10px;
     left: 0px;
-    width: 450px;
+    width: 360px;
 }
 
 .project2 img,
@@ -1208,7 +1209,7 @@ header .contact-btn button:not(:hover) span {
 .project-client {
     color: #666;
     position: absolute;
-    top: 100PX;
+    top: 132px;
     text-transform: uppercase;
     font-weight: bolder;
     margin-left: 30px;
@@ -1216,7 +1217,7 @@ header .contact-btn button:not(:hover) span {
 
 .project-description {
     position: absolute;
-    top: 140px;
+    top: 260px;
     font-family: 'Barlow', sans-serif;
     font-size: 18px;
     margin-left: 30px;
@@ -1238,7 +1239,7 @@ header .contact-btn button:not(:hover) span {
     border-right: none;
     background-color: white;
     position: absolute;
-    bottom: -610px;
+    bottom: -489px;
     width: 100%;
     font-family: inherit;
     text-transform: uppercase;
