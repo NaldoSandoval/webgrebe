@@ -257,8 +257,8 @@ body {
     z-index: 5;
     position: absolute;
     left: 50%;
-    top: 8712px;
-    width: 900px;
+    top: 6973px;
+    width: 720px;
     height: 40px;
     background-color: black;
     transform: translate(-360px, -360px);
@@ -942,19 +942,19 @@ header .contact-btn button:not(:hover) span {
 }
 
 .hor-guideline-26 {
-    top: 8610px;
+    top: 6892px; ;
 }
 
 .hor-guideline-27 {
-    top: 8910px;
+    top: 7132px;
 }
 
 .hor-guideline-28 {
-    top: 9270px;
+    top:  7420px;
 }
 
 .hor-guideline-29 {
-    top: 9720px;
+    top: 9630px;
 }
 
 .hor-guideline-30 {
@@ -1362,11 +1362,11 @@ header .contact-btn button:not(:hover) span {
     border-left: 1px solid #bbb;
     border-right: 1px solid #bbb;
     left: 50%;
-    top: 8310px;
+    top: 6653px;
     background-color: white;
-    height: 960px;
-    width: 1800px;
-    transform: translateX(-900px);
+    height: 768px;
+    width: 1440px;
+    transform: translateX(-720px);
 }
 
 #about .reference {
@@ -1381,10 +1381,10 @@ header .contact-btn button:not(:hover) span {
     z-index: -1;
     position: absolute;
     left: 0%;
-    top: 8310px;
+    top: 6653px;
     background-color: white;
-    height: 960px;
-    width: 3060px;
+    height: 768px;
+    width: 2448px;
     background-image: repeating-linear-gradient(45deg, #666, #666 1px, transparent 1px, transparent 12px);
 }
 
@@ -1397,7 +1397,7 @@ header .contact-btn button:not(:hover) span {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 48px;
+    font-size: 38.4px;
     font-weight: normal;
     color: black;
 }
@@ -1405,22 +1405,22 @@ header .contact-btn button:not(:hover) span {
 #about .mantra-follow-up {
     font-family: 'Barlow', sans-serif;
     position: absolute;
-    top: 266px;
-    left: 96px;
-    width: 750px;
+    top: 216px;
+    left: 66px;
+    width: 600px;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 32px;
+    font-size: 25.6px;
     font-weight: normal;
     color: black;
 }
 
 #about .about-title {
     position: absolute;
-    top: 84px;
-    left: 106px;
+    top: 67.2px;
+    left: 84.8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1429,12 +1429,12 @@ header .contact-btn button:not(:hover) span {
 #about .fill-slot1 {
     position: absolute;
     top: 0;
-    left: 900px;
+    left: 720px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 450px;
-    height: 300px;
+    width: 360px;
+    height: 240px;
 }
 
 #about .fill-slot1::before,
@@ -1457,59 +1457,59 @@ header .contact-btn button:not(:hover) span {
 #about .fill-slot2 {
     position: absolute;
     top: 0;
-    left: 1350px;
+    left: 1080px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 450px;
-    height: 300px;
+    width: 360px;
+    height: 240px;
 }
 
 #about .fill-slot3 {
     position: absolute;
-    top: 300px;
-    left: 25px;
+    top: 240px;
+    left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
-    height: 300px;
+    width: 320px;
+    height: 240px;
 }
 
 #about .fill-slot4 {
     position: absolute;
-    top: 630px;
-    left: 1125px;
+    top: 504px;
+    left: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 450px;
-    height: 300px;
+    width: 360px;
+    height: 240px;
 }
 
 #about .fill-slot5 {
     background-color: black;
     position: absolute;
-    top: 300px;
-    left: 450px;
+    top: 240px;
+    left: 360px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1300px;
-    height: 300px;
+    width: 1040px;
+    height: 240px;
     overflow: hidden;
 }
 
 #about .fill-slot5 p {
     position: absolute;
-    top: -50px;
-    left: -3px;
-    width: 100%;
-    height: 100%;
+    top: -40px;
+    left: -2.4px;
+    width: 80%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 48px;
+    font-size: 38.4px;
     font-weight: normal;
     color: var(--orange-color);
 }
@@ -1523,7 +1523,7 @@ header .contact-btn button:not(:hover) span {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 48px;
+    font-size: 38.4px;
     font-weight: normal;
     color: black;
 }
@@ -1531,13 +1531,13 @@ header .contact-btn button:not(:hover) span {
 #about .fill-slot6 {
     background-color: white;
     position: absolute;
-    top: 300px;
-    left: 450px;
+    top: 240px;
+    left: 360px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1300px;
-    height: 300px;
+    width: 1040px;
+    height: 240px;
     overflow: hidden;
     transition: width 0.5s ease;
     /* Smooth transition for width */
@@ -1548,13 +1548,13 @@ header .contact-btn button:not(:hover) span {
 #about .fill-slot7 {
     background-color: black;
     position: absolute;
-    top: 300px;
-    left: 450px;
+    top: 240px;
+    left: 360px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1300px;
-    height: 300px;
+    width: 1040px;
+    height: 240px;
     overflow: hidden;
 }
 
@@ -1570,8 +1570,8 @@ header .contact-btn button:not(:hover) span {
     left: 50%;
     top: 9720px;
     background-color: black;
-    height: 960px;
-    width: 1800px;
+    height: 768px;
+    width: 1440px;
     transform: translateX(-900px);
 }
 
@@ -1581,17 +1581,17 @@ header .contact-btn button:not(:hover) span {
     left: 0%;
     top: 9720px;
     background-color: black;
-    height: 960px;
-    width: 3060px;
+    height: 768px;
+    width: 2448px;
     background-image: repeating-linear-gradient(45deg, #666, #666 1px, transparent 1px, transparent 12px);
 }
 
 #contact .titlebox {
     z-index: 5;
     position: absolute;
-    left: 902px;
-    width: 898px;
-    height: 300px;
+    left: 721.6px;
+    width: 718.4px;
+    height: 240px;
     background-color: black;
     transform: translate(0, 0);
     overflow: hidden;
