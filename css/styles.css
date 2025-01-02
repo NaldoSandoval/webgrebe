@@ -20,7 +20,7 @@ body {
     height: 472px;
     width: 900px;
     background-color: #eaeaea;
-    transform: translateX(-1350px);
+    transform: translateX(-1080px);
 }
 
 .header-background-b {
@@ -1112,7 +1112,7 @@ header .contact-btn button:not(:hover) span {
     height: 480px;
     background-color: #E4E4E4;
     background-image: repeating-linear-gradient(45deg, #999, #999 1px, transparent 1px, transparent 12px);
-    transform: translateX(1350px);
+    transform: translateX(1080px);
     border-right: 1px solid #bbb;
 }
 
@@ -1146,8 +1146,8 @@ header .contact-btn button:not(:hover) span {
 
 
 .project2 {
-    top: 3060px;
-    transform: translateX(-450px);
+    top: 2453px;
+    transform: translateX(-360px);
 }
 
 .project3 {
@@ -1157,7 +1157,7 @@ header .contact-btn button:not(:hover) span {
 
 .project4 {
     top: 5160px;
-    transform: translateX(-450px);
+    transform: translateX(-360px);
 }
 
 .project5 {
@@ -1167,7 +1167,7 @@ header .contact-btn button:not(:hover) span {
 
 .project6 {
     top: 7260px;
-    transform: translateX(-450px);
+    transform: translateX(-360px);
 }
 
 /* projects */
