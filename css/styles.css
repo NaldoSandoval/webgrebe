@@ -10,7 +10,7 @@ body {
     padding: 0;
     background-color: #E4E4E4;
     overflow-x: hidden;
-    height: 8480px;
+    height: 8528px;
 }
 
 .header-background-a {
@@ -954,15 +954,15 @@ header .contact-btn button:not(:hover) span {
 }
 
 .hor-guideline-29 {
-    top: 9630px;
+    top: 7780px;
 }
 
 .hor-guideline-30 {
-    top: 10020px;
+    top: 8020px;
 }
 
 .hor-guideline-31 {
-    top: 10320px;
+    top: 8260px;
 }
 
 .animated_text1 {
@@ -1568,30 +1568,30 @@ header .contact-btn button:not(:hover) span {
     border-left: 1px solid #bbb;
     border-right: 1px solid #bbb;
     left: 50%;
-    top: 9720px;
+    top: 7780px;
     background-color: black;
-    height: 768px;
+    height: 720px;
     width: 1440px;
-    transform: translateX(-900px);
+    transform: translateX(-720px);
 }
 
 #contact .body-bg {
     z-index: -1;
     position: absolute;
     left: 0%;
-    top: 9720px;
+    top: 7780px;
     background-color: black;
-    height: 768px;
-    width: 2448px;
+    height: 720px;
+    width: 2560px;
     background-image: repeating-linear-gradient(45deg, #666, #666 1px, transparent 1px, transparent 12px);
 }
 
 #contact .titlebox {
     z-index: 5;
     position: absolute;
-    left: 721.6px;
-    width: 718.4px;
-    height: 240px;
+    left: 720px;
+    width: 720px;
+    height: 192px;
     background-color: black;
     transform: translate(0, 0);
     overflow: hidden;
@@ -1599,9 +1599,9 @@ header .contact-btn button:not(:hover) span {
 
 #contact .titlebox h3 {
     position: relative;
-    top: -108px;
+    top: -86.4px;
     color: #3b3b3b;
-    font-size: 156px;
+    font-size: 124.8px;
     font-weight: bolder;
 }
 
@@ -1617,30 +1617,30 @@ header .contact-btn button:not(:hover) span {
     }
 
     to {
-        transform: translateX(-900px);
+        transform: translateX(-720px);
     }
 }
 
 #contact .contact-text {
     position: absolute;
     top: 0;
-    left: 100px;
-    width: 650px;
-    height: 300px;
+    left: 80px;
+    width: 520px;
+    height: 240px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 42px;
+    font-size: 33.6px;
     font-weight: normal;
     color: white;
 }
 
 #contact .box-x {
     position: absolute;
-    top: 300px;
+    top: 240px;
     left: 0;
-    width: 452px;
-    height: 300px;
+    width: 361.6px;
+    height: 240px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1666,10 +1666,10 @@ header .contact-btn button:not(:hover) span {
 
 #contact .box-mail {
     position: absolute;
-    top: 300px;
-    left: 450px;
-    width: 1350px;
-    height: 300px;
+    top: 240px;
+    left: 360px;
+    width: 1080px;
+    height: 240px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1714,10 +1714,10 @@ header .contact-btn button:not(:hover) span {
 
 #contact .fineprint p {
     position: absolute;
-    top: 820px;
-    left: 470px;
-    width: 400px;
-    height: 120px;
+    top: 656px;
+    left: 376px;
+    width: 320px;
+    height: 96px;
     font-family: Barlow, sans-serif;
     display: flex;
     justify-content: center;
@@ -1729,10 +1729,10 @@ header .contact-btn button:not(:hover) span {
 
 #contact .socialmedia1 {
     position: absolute;
-    top: 600px;
+    top: 480px;
     left: 0;
-    width: 450px;
-    height: 300px;
+    width: 360px;
+    height: 240px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1740,10 +1740,10 @@ header .contact-btn button:not(:hover) span {
 
 #contact .socialmedia2 {
     position: absolute;
-    top: 300px;
-    left: 450px;
-    width: 450px;
-    height: 300px;
+    top: 240px;
+    left: 360px;
+    width: 360px;
+    height: 240px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1752,9 +1752,9 @@ header .contact-btn button:not(:hover) span {
 #contact .socialmedia3 {
     position: absolute;
     top: 0;
-    left: 900px;
-    width: 450px;
-    height: 300px;
+    left: 720px;
+    width: 360px;
+    height: 240px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1762,10 +1762,10 @@ header .contact-btn button:not(:hover) span {
 
 #contact .socialmedia4 {
     position: absolute;
-    top: -300px;
-    left: 1350px;
-    width: 450px;
-    height: 300px;
+    top: -240px;
+    left: 1080px;
+    width: 360px;
+    height: 240px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1808,22 +1808,23 @@ header .contact-btn button:not(:hover) span {
     z-index: 1;
     opacity: 30%;
     transition: opacity 0.3s ease;
+    transform: scale(0.8); /* Reduce the scale by 20% */
 }
 
 #bottom-footer {
     position: relative;
     z-index: 8;
-    top: 7602px;
+    top: 8030px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    height: 60px;
+    height: 48px;
     background-color: black;
     color: #666;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 13px;
+    font-size: 12px;
     border-top: #bbb 1px solid;
 }
 
