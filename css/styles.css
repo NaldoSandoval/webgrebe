@@ -315,6 +315,18 @@ body {
     border-left: 1px solid #bbb;
 }
 
+#services .post-complement {
+    position: absolute;
+    top: 772px;
+    left: 50%;
+    width: 960px;
+    height: 480px;
+    /* border-top: 1px solid #bbb; */
+    background-color: #eaeaea;
+    background-image: repeating-linear-gradient(45deg, #999, #999 1px, transparent 1px, transparent 12px);
+    transform: translateX(-1680px);
+}
+
 /* Initial slots state */
 .slot1,
 .slot2,
@@ -387,7 +399,7 @@ body {
     position: absolute;
     font-size: 28px;
     text-transform: uppercase;
-    font-weight: bolder;
+    font-weight: normal;
     bottom: -5px;
     left: 30px;
     opacity: 1;
@@ -546,7 +558,13 @@ body {
 }
 
 .slot1 {
-    display: none;
+    top: 772px;
+    left: 50%;
+    background-color: white;
+    width: 360px;
+    height: 240px;
+    transform: translate(-720px, 0);
+    border-left: 1px solid #bbb;
 }
 
 .slot2 {
@@ -578,7 +596,14 @@ body {
 }
 
 .slot5 {
-    display: none;
+    position: absolute;
+    top: 1013px;
+    left: 50%;
+    background-color: white;
+    width: 360px;
+    height: 240px;
+    transform: translate(-720px, -0);
+    border-left: 1px solid #bbb;
 }
 
 .slot6 {
