@@ -135,16 +135,39 @@ body {
 
 /* menu  */
 
+.menu .reel {
+    transition: color 0.3s ease;
+}
+
+.menu .reel span {
+    z-index: -1;
+    position: absolute;
+    top: -7px;
+    left: 24px;
+    transform: translateX(-50%);
+    width: 0;
+    height: 36px;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+.menu .reel:hover span {
+    width: 90px;
+}
+
+.menu .reel:hover {
+    color: white;
+}
+
 .menu .services {
     transition: color 0.3s ease;
-    /* Add transition for smooth color change */
 }
 
 .menu .services span {
     z-index: -1;
     position: absolute;
     top: -7px;
-    left: 47px;
+    left: 154px;
     transform: translateX(-50%);
     width: 0;
     height: 36px;
@@ -158,19 +181,17 @@ body {
 
 .menu .services:hover {
     color: white;
-    /* Change this to the color you want */
 }
 
 .menu .projects {
     transition: color 0.3s ease;
-    /* Add transition for smooth color change */
 }
 
 .menu .projects span {
     z-index: -1;
     position: absolute;
     top: -7px;
-    left: 204px;
+    left: 310px;
     transform: translateX(-50%);
     width: 0;
     height: 36px;
@@ -184,21 +205,19 @@ body {
 
 .menu .projects:hover {
     color: white;
-    /* Change this to the color you want */
 }
 
-/* // about  */
+/* about  */
 
 .menu .about {
     transition: color 0.3s ease;
-    /* Add transition for smooth color change */
 }
 
 .menu .about span {
     z-index: -1;
     position: absolute;
     top: -7px;
-    left: 347px;
+    left: 452px;
     transform: translateX(-50%);
     width: 0;
     height: 36px;
