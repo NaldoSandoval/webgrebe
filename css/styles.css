@@ -231,7 +231,6 @@ body {
 
 .menu .about:hover {
     color: white;
-    /* Change this to the color you want */
 }
 
 .menu .link-hover {
@@ -309,6 +308,87 @@ body {
         transform: translateX(500px);
     }
 }
+
+/* reel  */
+
+#reel .titlebox {
+    z-index: 5;
+    position: absolute;
+    left: 50%;
+    top: 1183px;
+    width: 720px;
+    height: 40px;
+    background-color: black;
+    transform: translate(-360px, -451px);
+    overflow: hidden;
+}
+
+#reel .body {
+    position: absolute;
+    top: 772px;
+    left: 50%;
+    width: 1440px;
+    height: 480px;
+    background-color: white;
+    transform: translateX(-720px);
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+}
+
+#reel .body-bg {
+    position: absolute;
+    top: 772px;
+    left: 50%;
+    width: 2580px;
+    height: 480px;
+    background-color: #E4E4E4;
+    transform: translateX(-50%);
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+    background-image: repeating-linear-gradient(45deg, #999, #999 1px, transparent 1px, transparent 12px);
+    z-index: -2;
+}
+
+#reel .body video {
+    transform: translateX(360px);
+    width: 720px;
+    height: 480px;
+    max-width: 100%;
+    background-color: black;
+    /* border: 1px solid #999; */
+    z-index: 5;
+}
+
+/* #reel {
+    position: relative;
+    z-index: 5;
+    background-color: black;
+    color: white;
+    padding: 50px 20px;
+}
+
+#reel .titlebox {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#reel .body {
+    text-align: center;
+}
+
+#reel video {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #999;
+}
+
+#reel p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ccc;
+} */
+
+/* comment services  */
 
 #services .titlebox {
     z-index: 5;
