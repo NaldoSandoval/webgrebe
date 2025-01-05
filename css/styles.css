@@ -10,7 +10,7 @@ body {
     padding: 0;
     background-color: #E4E4E4;
     overflow-x: hidden;
-    height: 8528px;
+    height: 8548px;
 }
 
 .header-background-a {
@@ -263,7 +263,7 @@ body {
     z-index: 5;
     position: absolute;
     left: 50%;
-    top: 1932px;
+    top: 2772px;
     width: 720px;
     height: 40px;
     background-color: black;
@@ -316,10 +316,10 @@ body {
     position: absolute;
     left: 50%;
     top: 1183px;
-    width: 720px;
+    width: 360px;
     height: 40px;
     background-color: black;
-    transform: translate(-360px, -451px);
+    transform: translate(-720px, -451px);
     overflow: hidden;
 }
 
@@ -351,12 +351,69 @@ body {
 
 #reel .body video {
     transform: translateX(360px);
-    width: 720px;
+    width: 1080px;
     height: 480px;
     max-width: 100%;
     background-color: black;
     /* border: 1px solid #999; */
     z-index: 5;
+}
+
+#reel .slot-a1 {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 360px;
+    height: 240px;
+    background-color: white;
+    background-image: linear-gradient(45deg, #000 1px, transparent 1px);
+    background-size: 12px 12px;
+}
+
+/* #reel .slot-a1::before,
+#reel .slot-a1::after {
+    top: -95px;
+    left: 180px;
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 180%;
+    background-color: #bbb;
+}
+
+#reel .slot-a1::before {
+    transform: rotate(56.5deg);
+}
+
+#reel .slot-a1::after {
+    transform: rotate(-56.5deg);
+} */
+
+#reel .slot-a2 {
+    position: absolute;
+    top: 240px;
+    left: 0;
+    width: 360px;
+    height: 240px;
+}
+
+#reel .slot-a2::before,
+#reel .slot-a2::after {
+    top: -95px;
+    left: 180px;
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 180%;
+    background-color: #bbb;
+}
+
+#reel .slot-a2::before {
+    transform: rotate(56.5deg);
+}
+
+#reel .slot-a2::after {
+    transform: rotate(-56.5deg);
 }
 
 /* #reel {
@@ -394,7 +451,7 @@ body {
     z-index: 5;
     position: absolute;
     left: 50%;
-    top: 1183px;
+    top: 2023px;
     width: 720px;
     height: 40px;
     background-color: black;
@@ -404,11 +461,13 @@ body {
 
 #services .complement {
     position: absolute;
-    top: 772px;
+    top: 1613px;
     left: 50%;
     width: 1350px;
     height: 480px;
     background-color: white;
+    background-image: linear-gradient(45deg, #000 1px, transparent 1px);
+    background-size: 12px 12px;
     /* background-image: repeating-linear-gradient(45deg, #999, #999 1px, transparent 1px, transparent 12px); */
     transform: translateX(720px);
     border-left: 1px solid #bbb;
@@ -416,7 +475,7 @@ body {
 
 #services .post-complement {
     position: absolute;
-    top: 772px;
+    top: 1613px;
     left: 50%;
     width: 960px;
     height: 480px;
@@ -657,7 +716,7 @@ body {
 }
 
 .slot1 {
-    top: 772px;
+    top: 1613px;
     left: 50%;
     background-color: white;
     width: 360px;
@@ -667,7 +726,7 @@ body {
 }
 
 .slot2 {
-    top: 772px;
+    top: 1613px;
     left: 50%;
     background-color: white;
     width: 360px;
@@ -677,7 +736,7 @@ body {
 
 .slot3 {
     position: absolute;
-    top: 772px;
+    top: 1613px;
     left: 50%;
     width: 360px;
     height: 240px;
@@ -686,7 +745,7 @@ body {
 
 .slot4 {
     position: absolute;
-    top: 772px;
+    top: 1613px;
     left: 50%;
     background-color: white;
     width: 360px;
@@ -696,7 +755,7 @@ body {
 
 .slot5 {
     position: absolute;
-    top: 1013px;
+    top: 1853px;
     left: 50%;
     background-color: white;
     width: 360px;
@@ -707,7 +766,7 @@ body {
 
 .slot6 {
     position: absolute;
-    top: 1013px;
+    top: 1853px;
     left: 50%;
     background-color: white;
     width: 360px;
@@ -717,7 +776,7 @@ body {
 
 .slot7 {
     position: absolute;
-    top: 1013px;
+    top: 1853px;
     left: 50%;
     background-color: white;
     width: 360px;
@@ -727,7 +786,7 @@ body {
 
 .slot8 {
     position: absolute;
-    top: 1013px;
+    top: 1853px;
     left: 50%;
     background-color: white;
     width: 360px;
@@ -1134,10 +1193,17 @@ header .contact-btn button:not(:hover) span {
     }
 }
 
+.wire-images {
+    display: block;
+    width: 100%;
+    height: 500px;
+    overflow: hidden; /* Clips anything outside this container */
+}
+
 .wire-images .img1 {
     position: relative;
     left: -100px;
-    top: 140px;
+    top: 30px;
     mix-blend-mode: multiply;
     opacity: 0.8;
     transform: scale(0.90);
@@ -1207,11 +1273,6 @@ header .contact-btn button:not(:hover) span {
     background-size: 12px 12px;
 }
 
-.project1 {
-    top: 1613px;
-    transform: translateX(-720px);
-}
-
 .project1 .complement,
 .project3 .complement,
 .project5 .complement {
@@ -1269,28 +1330,33 @@ header .contact-btn button:not(:hover) span {
 }
 
 
-.project2 {
+.project1 {
     top: 2453px;
+    transform: translateX(-720px);
+}
+
+.project2 {
+    top: 3293px;
     transform: translateX(-360px);
 }
 
 .project3 {
-    top: 3293px;
+    top: 4133px;
     transform: translateX(-720px);
 }
 
 .project4 {
-    top: 4133px;
+    top: 4973px;
     transform: translateX(-360px);
 }
 
 .project5 {
-    top: 4973px;
+    top: 5813px;
     transform: translateX(-720px);
 }
 
 .project6 {
-    top: 5813px;
+    top: 6653px;
     transform: translateX(-360px);
 }
 
@@ -1938,7 +2004,7 @@ header .contact-btn button:not(:hover) span {
 #bottom-footer {
     position: relative;
     z-index: 8;
-    top: 8030px;
+    top: 7530px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
