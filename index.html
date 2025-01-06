@@ -163,12 +163,21 @@
     </section>
     
     <script>
-        document.getElementById('videoOverlay').addEventListener('click', function() {
-            var video = document.getElementById('reelVideo');
-            video.play();
-            this.style.display = 'none';
+        // Get references to the video and overlay elements
+        const videoOverlay = document.getElementById('videoOverlay');
+        const reelVideo = document.getElementById('reelVideo');
+    
+        // Play video and hide overlay on click
+        videoOverlay.addEventListener('click', function() {
+            reelVideo.play();
+            videoOverlay.style.display = 'none';
         });
-    </script>
+    
+        // Show overlay when video ends
+        reelVideo.addEventListener('ended', function() {
+            videoOverlay.style.display = 'flex'; // Use 'flex' if it contains elements aligned like flexbox
+        });
+    </script>    
     
 
     <section id="services">
