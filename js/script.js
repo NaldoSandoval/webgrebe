@@ -1,5 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    // Get references to the video and overlay elements
+    const videoOverlay = document.getElementById('videoOverlay');
+    const reelVideo = document.getElementById('reelVideo');
+
+    // Play video and hide overlay on click
+    videoOverlay.addEventListener('click', function () {
+        reelVideo.play();
+        videoOverlay.style.display = 'none';
+    });
+
+    // Show overlay when video ends
+    reelVideo.addEventListener('ended', function () {
+        videoOverlay.style.display = 'flex'; // Use 'flex' if it contains elements aligned like flexbox
+    });
+
     // Smooth scroll to the contact section
     document.querySelector(".contact-btn button").addEventListener("click", function () {
         const target = document.querySelector("#contact");

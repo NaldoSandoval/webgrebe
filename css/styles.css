@@ -373,6 +373,11 @@ body {
     overflow: hidden;
 }
 
+.video-overlap img {
+    position: relative;
+    top: 1px;
+}
+
 /* #reel .marquee-img {
     opacity: 0.05;
     background-image: url("../img/play-reel.png");
