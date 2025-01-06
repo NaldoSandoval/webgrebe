@@ -148,7 +148,12 @@
         <div class="body">
             <div class="slot-a1"></div>
             <div class="slot-a2"></div>
-            <video controls>
+            <div class="video-overlap" id="videoOverlay">
+                <img src="img/play-overlap.png" alt="">
+                <div class="marquee-img"></div>
+                <div class="marquee-img2"></div>
+            </div>
+            <video id="reelVideo" controls>
                 <source src="media/reel_.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -156,6 +161,15 @@
         </div>
         <div class="body-bg"></div>
     </section>
+    
+    <script>
+        document.getElementById('videoOverlay').addEventListener('click', function() {
+            var video = document.getElementById('reelVideo');
+            video.play();
+            this.style.display = 'none';
+        });
+    </script>
+    
 
     <section id="services">
         <div class="titlebox">

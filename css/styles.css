@@ -359,6 +359,68 @@ body {
     z-index: 5;
 }
 
+#reel .video-overlap {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1080px;
+    height: 480px;
+    background-color: #eeeeee;
+    transform: translateX(-360px);
+    z-index: 10;
+    display: block;
+    overflow: hidden;
+}
+
+/* #reel .marquee-img {
+    opacity: 0.05;
+    background-image: url("../img/play-reel.png");
+    z-index: 5;
+    top: 25px;
+    position: relative;
+    width: 2000%;
+    height: 210px;
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    background-size: 50%; 
+    animation: scroll-right-to-left-reel 720s linear infinite;
+}
+
+@keyframes scroll-right-to-left-reel {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+#reel .marquee-img2 {
+    opacity: 0.05;
+    background-image: url("../img/play-reel.png");
+    z-index: 5;
+    top: 70px;
+    position: relative;
+    width: 2000%;
+    height: 210px;
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    animation: scroll-right-to-left-reel2 720s linear infinite;
+}
+
+@keyframes scroll-right-to-left-reel2 {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -100% 0;
+    }
+} */
+
+
 #reel .slot-a1 {
     position: absolute;
     top: 0;
@@ -849,7 +911,8 @@ header .contact-btn button {
     font: inherit;
     position: relative;
     right: 90px;
-    padding: 8px 20px; /* Reduced size by 20% */
+    padding: 8px 20px;
+    /* Reduced size by 20% */
     border: none;
     background-color: var(--orange-color);
     color: white;
@@ -859,7 +922,7 @@ header .contact-btn button {
 }
 
 header .contact-btn button:hover {
-    background-color: #ff5900; 
+    background-color: #ff5900;
 }
 
 header .contact-btn button:hover span {
@@ -870,7 +933,7 @@ header .contact-btn button:hover span {
 header .contact-btn button div {
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.8s ease; 
+    transition: opacity 0.8s ease;
 }
 
 header .contact-btn button:hover div {
@@ -887,27 +950,33 @@ header .contact-btn button:hover div {
 
 header .contact-btn button div {
     position: absolute;
-    top: -9px!important;
+    top: -9px !important;
     visibility: hidden;
     white-space: nowrap;
     overflow: hidden;
-    opacity: 0; /* Initial opacity */
+    opacity: 0;
+    /* Initial opacity */
 }
 
 /* Marquee effect for <p> inside the div */
 header .contact-btn button:hover div p {
-    display: inline-block; /* Ensure the content remains inline for scrolling */
+    display: inline-block;
+    /* Ensure the content remains inline for scrolling */
     white-space: nowrap;
-    animation: contact-btn-marquee 5s linear infinite; /* Add animation for marquee */
+    animation: contact-btn-marquee 5s linear infinite;
+    /* Add animation for marquee */
 }
 
 /* Define the marquee animation */
 @keyframes contact-btn-marquee {
     from {
-        transform: translateX(0); /* Start off-screen to the right */
+        transform: translateX(0);
+        /* Start off-screen to the right */
     }
+
     to {
-        transform: translateX(-500px); /* End off-screen to the left */
+        transform: translateX(-500px);
+        /* End off-screen to the left */
     }
 }
 
@@ -942,7 +1011,7 @@ header .contact-btn button:not(:hover) span {
 .header-guideline-left {
     position: fixed;
     top: 0;
-    height:102px;
+    height: 102px;
     left: 50%;
     width: 1px;
     background-color: #bbb;
@@ -1125,7 +1194,8 @@ header .contact-btn button:not(:hover) span {
 }
 
 .hor-guideline-26 {
-    top: 6892px; ;
+    top: 6892px;
+    ;
 }
 
 .hor-guideline-27 {
@@ -1133,7 +1203,7 @@ header .contact-btn button:not(:hover) span {
 }
 
 .hor-guideline-28 {
-    top:  7420px;
+    top: 7420px;
 }
 
 .hor-guideline-29 {
@@ -1197,7 +1267,8 @@ header .contact-btn button:not(:hover) span {
     display: block;
     width: 100%;
     height: 500px;
-    overflow: hidden; /* Clips anything outside this container */
+    overflow: hidden;
+    /* Clips anything outside this container */
 }
 
 .wire-images .img1 {
@@ -1998,7 +2069,8 @@ header .contact-btn button:not(:hover) span {
     z-index: 1;
     opacity: 30%;
     transition: opacity 0.3s ease;
-    transform: scale(0.8); /* Reduce the scale by 20% */
+    transform: scale(0.8);
+    /* Reduce the scale by 20% */
 }
 
 #bottom-footer {
