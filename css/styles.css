@@ -378,55 +378,6 @@ body {
     top: 1px;
 }
 
-
-/* #reel .marquee-img {
-    opacity: 0.05;
-    background-image: url("../img/play-reel.png");
-    z-index: 5;
-    top: 25px;
-    position: relative;
-    width: 2000%;
-    height: 210px;
-    background-repeat: repeat-x;
-    background-position: 0 0;
-    background-size: 50%; 
-    animation: scroll-right-to-left-reel 720s linear infinite;
-}
-
-@keyframes scroll-right-to-left-reel {
-    0% {
-        background-position: 0 0;
-    }
-
-    100% {
-        background-position: 100% 0;
-    }
-}
-
-#reel .marquee-img2 {
-    opacity: 0.05;
-    background-image: url("../img/play-reel.png");
-    z-index: 5;
-    top: 70px;
-    position: relative;
-    width: 2000%;
-    height: 210px;
-    background-repeat: repeat-x;
-    background-position: 0 0;
-    animation: scroll-right-to-left-reel2 720s linear infinite;
-}
-
-@keyframes scroll-right-to-left-reel2 {
-    0% {
-        background-position: 0 0;
-    }
-
-    100% {
-        background-position: -100% 0;
-    }
-} */
-
-
 #reel .slot-a1 {
     position: absolute;
     top: 0;
