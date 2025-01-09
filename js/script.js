@@ -15,10 +15,23 @@ document.addEventListener("DOMContentLoaded", function () {
         videoOverlay.style.display = 'flex'; // Use 'flex' if it contains elements aligned like flexbox
     });
 
-    // Smooth scroll to the contact section
+
+    // reel 
+    document.querySelector("#reelLink").addEventListener("click", function () {
+        const target = document.querySelector("#reel");
+        const yOffset = 180; // Adjust this value to account for fixed headers or desired offset
+        const yPosition = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+        window.scrollTo({
+            top: yPosition,
+            behavior: "smooth"
+        });
+    });
+
+    // contact 
     document.querySelector(".contact-btn button").addEventListener("click", function () {
         const target = document.querySelector("#contact");
-        const yOffset = 6600; // Adjust this value to account for fixed headers or desired offset
+        const yOffset = 8600; // Adjust this value to account for fixed headers or desired offset
         const yPosition = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
         window.scrollTo({
@@ -35,10 +48,11 @@ document.addEventListener("DOMContentLoaded", function () {
             behavior: "smooth"
         });
     });
-
+    
+    // services
     document.querySelector("#servicesLink").addEventListener("click", function () {
         const target = document.querySelector("#services");
-        const yOffset = -2210; // Adjust this value for the desired offset
+        const yOffset = 1020; // Adjust this value for the desired offset
         const yPosition = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
         window.scrollTo({
@@ -47,9 +61,10 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    // projects
     document.querySelector("#projectsLink").addEventListener("click", function () {
         const target = document.querySelector("#projects");
-        const yOffset = -1160; // Adjust this value for the desired offset
+        const yOffset = 1860; // Adjust this value for the desired offset
         const yPosition = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
         window.scrollTo({
@@ -58,6 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    // about
     document.querySelector("#aboutLink").addEventListener("click", function () {
         const target = document.querySelector("#about");
         const yOffset = 5140; // Adjust this value for the desired offset
