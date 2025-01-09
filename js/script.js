@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // about
     document.querySelector("#aboutLink").addEventListener("click", function () {
         const target = document.querySelector("#about");
-        const yOffset = 5140; // Adjust this value for the desired offset
+        const yOffset = 6060; // Adjust this value for the desired offset
         const yPosition = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
         window.scrollTo({
