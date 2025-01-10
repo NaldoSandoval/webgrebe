@@ -341,7 +341,7 @@ body {
     left: 50%;
     width: 2580px;
     height: 480px;
-    background-color: #E4E4E4;
+    background-color: #e4e4e400;
     transform: translateX(-50%);
     border-left: 1px solid #bbb;
     border-right: 1px solid #bbb;
@@ -460,7 +460,7 @@ body {
     background-size: 12px 12px;
     /* background-image: repeating-linear-gradient(45deg, #999, #999 1px, transparent 1px, transparent 12px); */
     transform: translateX(720px);
-    border-left: 1px solid #bbb;
+    /* border-left: 1px solid #bbb; */
 }
 
 #services .post-complement {
@@ -784,6 +784,54 @@ body {
     transform: translate(360px, -0);
 }
 
+.services-guide1 {
+    display: block; 
+    position: absolute; 
+    width: 1px; 
+    height: 480px; 
+    background-color: #bbb; 
+    top: 1613px;
+    left: 50%;
+    transform: translate(-360px, -0);
+    z-index: 3;
+}
+
+.services-guide2 {
+    display: block; 
+    position: absolute; 
+    width: 1px; 
+    height: 480px; 
+    background-color: #bbb; 
+    top: 1613px;
+    left: 50%;
+    transform: translate(0, -0);
+    z-index: 3;
+}
+
+.services-guide3 {
+    display: block; 
+    position: absolute; 
+    width: 1px; 
+    height: 480px; 
+    background-color: #bbb; 
+    top: 1613px;
+    left: 50%;
+    transform: translate(360px, -0);
+    z-index: 3;
+}
+
+.services-guide4 {
+    display: block; 
+    position: absolute; 
+    width: 1px; 
+    height: 480px; 
+    background-color: #bbb; 
+    top: 1613px;
+    left: 50%;
+    transform: translate(720px, -0);
+    z-index: 3;
+}
+
 header {
     z-index: 10;
     display: flex;
@@ -889,10 +937,8 @@ header .contact-btn button div {
 /* Marquee effect for <p> inside the div */
 header .contact-btn button:hover div p {
     display: inline-block;
-    /* Ensure the content remains inline for scrolling */
     white-space: nowrap;
     animation: contact-btn-marquee 5s linear infinite;
-    /* Add animation for marquee */
 }
 
 /* Define the marquee animation */
@@ -1021,6 +1067,13 @@ header .contact-btn button:not(:hover) span {
 .hor-guideline.z-index-3{
     z-index: -3
 }
+
+/* previous -1 z-index */
+.hor-guideline.z-index-1{
+    z-index: 1
+}
+
+
 
 /* Individual top positions */
 .hor-guideline-1 {
@@ -1282,7 +1335,7 @@ header .contact-btn button:not(:hover) span {
     left: 0;
     width: 720px;
     height: 480px;
-    background-color: #E4E4E4;
+    background-color: #e4e4e400;
     background-image: repeating-linear-gradient(45deg, #999, #999 1px, transparent 1px, transparent 12px);
     transform: translateX(-720px);
     /* border-right: 1px solid #bbb; */
@@ -1296,7 +1349,7 @@ header .contact-btn button:not(:hover) span {
     left: 0;
     width: 720px;
     height: 480px;
-    background-color: #E4E4E4;
+    background-color: #E4E4E400;
     background-image: repeating-linear-gradient(45deg, #999, #999 1px, transparent 1px, transparent 12px);
     transform: translateX(1080px);
     border-right: 1px solid #bbb;
@@ -1626,6 +1679,8 @@ header .contact-btn button:not(:hover) span {
     align-items: center;
     width: 360px;
     height: 240px;
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
 }
 
 #about .fill-slot1::before,
@@ -1830,12 +1885,12 @@ header .contact-btn button:not(:hover) span {
     position: absolute;
     top: 240px;
     left: 0;
-    width: 361.6px;
+    width: 360px;
     height: 240px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(0, 0, 0);
+    background-color: black;
 }
 
 #contact .box-x::before,
@@ -2001,6 +2056,66 @@ header .contact-btn button:not(:hover) span {
     transition: opacity 0.3s ease;
     transform: scale(0.8);
     /* Reduce the scale by 20% */
+}
+
+.contacts-guide1 {
+    display: block;
+    position: absolute;
+    top: 8020px;
+    width: 1px;
+    background-color: #bbb;
+    height: 480px;
+    left: 50%;
+    transform: translate(-360px, -0);
+    z-index: 3;
+}
+
+.contacts-guide2 {
+    display: block;
+    position: absolute;
+    top: 7780px;
+    width: 1px;
+    background-color: #bbb;
+    height: 240px;
+    left: 50%;
+    transform: translate(0, -0);
+    z-index: 3;
+}
+
+.contacts-guide3 {
+    display: block;
+    position: absolute;
+    top: 8260px;
+    width: 1px;
+    background-color: #bbb;
+    height: 240px;
+    left: 50%;
+    transform: translate(0, -0);
+    z-index: 3;
+}
+
+.contacts-guide4 {
+    display: block;
+    position: absolute;
+    top: 8260px;
+    width: 1px;
+    background-color: #bbb;
+    height: 240px;
+    left: 50%;
+    transform: translate(0, -0);
+    z-index: 3;
+}
+
+.contacts-guide5 {
+    display: block;
+    position: absolute;
+    top: 8260px;
+    width: 1px;
+    background-color: #bbb;
+    height: 240px;
+    left: 50%;
+    transform: translate(360px, -0);
+    z-index: 3;
 }
 
 #bottom-footer {
