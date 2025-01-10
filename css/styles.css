@@ -977,7 +977,7 @@ header .contact-btn button:not(:hover) span {
     left: 50%;
     width: 1px;
     background-color: #bbb;
-    z-index: 1;
+    z-index: -5;
     transform: translateX(360px);
 }
 
@@ -988,7 +988,7 @@ header .contact-btn button:not(:hover) span {
     left: 50%;
     width: 1px;
     background-color: #bbb;
-    z-index: 2;
+    z-index: -3
 }
 
 .ver-guideline-right {
@@ -998,7 +998,7 @@ header .contact-btn button:not(:hover) span {
     left: 50%;
     width: 1px;
     background-color: #bbb;
-    z-index: 1;
+    z-index: -5;
     transform: translateX(-360px);
 }
 
@@ -1012,12 +1012,14 @@ header .contact-btn button:not(:hover) span {
     background-color: #bbb;
 }
 
-.hor-guideline.z-index-0 {
-    z-index: 0;
+/* previos zero z-index */
+.hor-guideline.z-index-5{
+    z-index: -5
 }
 
-.hor-guideline.z-index-2 {
-    z-index: 2;
+/* previous -1 z-index */
+.hor-guideline.z-index-3{
+    z-index: -3
 }
 
 /* Individual top positions */
