@@ -1374,16 +1374,23 @@ header .contact-btn button:not(:hover) span {
     left: 0;
     width: 720px;
     height: 480px;
-    background-image: url("../img/projects-img/metro/1.jpg");
+    /* background-color: #dbdbdb; */
+    /* background-image: url("../img/projects-img/metro/1.jpg"); */
 }
 
 .image-slider img {
-    display: none; /* Initially hidden */
+    /* display: none;  */
+    position: relative;
+    top: 215px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition */
+    cursor: pointer;
 }
 
 .project .image-slider .left:hover img,
 .project .image-slider .right:hover img {
-    display: block; /* Visible when hovering over the parent */
+    opacity: 1; /* Fully visible on hover */
+    /* display: block;  */
 }
 
 .project .image-slider .right {
