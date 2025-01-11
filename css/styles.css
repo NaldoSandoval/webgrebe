@@ -1368,14 +1368,27 @@ header .contact-btn button:not(:hover) span {
     background-size: 12px 12px;
 }
 
-.project .image-slider {
+.project1 .image-slider,
+.project3 .image-slider,
+.project5 .image-slider {
+    z-index: 5;
     position: absolute;
     top: 0;
     left: 0;
     width: 720px;
     height: 480px;
-    /* background-color: #dbdbdb; */
-    /* background-image: url("../img/projects-img/metro/1.jpg"); */
+    background-color: #dbdbdb;
+}
+
+.project2 .image-slider,
+.project4 .image-slider {
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 360px;
+    width: 720px;
+    height: 480px;
+    background-color: #dbdbdb;
 }
 
 .image-slider img {
