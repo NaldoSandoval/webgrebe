@@ -1368,6 +1368,79 @@ header .contact-btn button:not(:hover) span {
     background-size: 12px 12px;
 }
 
+.project .image-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 720px;
+    height: 480px;
+    background-image: url("../img/projects-img/metro/1.jpg");
+}
+
+.image-slider img {
+    display: none; /* Initially hidden */
+}
+
+.project .image-slider .left:hover img,
+.project .image-slider .right:hover img {
+    display: block; /* Visible when hovering over the parent */
+}
+
+.project .image-slider .right {
+    position: absolute;
+    top: 0;
+    left: 360px;
+    width: 360px;
+    height: 480px;
+    /* background-color: red; */
+    color: white;
+}
+
+/* .project .image-slider .right:hover {
+    background-color: red;
+} */
+
+.project .image-slider .left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 480px;
+    /* background-color: blue; */
+    color: white;
+}
+
+.image-slider img {
+    position: relative;
+    top: 215px;
+}
+
+.image-slider .left img {
+    position: relative;
+    left: 22px;
+}
+
+.image-slider .right img {
+    float: right;
+    position: relative;
+    right: 22px;
+    transform: scaleX(-1);
+}
+
+
+/* .project .image-slider .left:hover {
+    background-color: blue;
+} */
+
+.image-slider .header-guideline-left {
+    position: absolute;
+    top: 0;
+    left: 720px;
+    width: 360px;
+    height: 480px;
+    background-color: blue;
+}
+
 .project1 .complement,
 .project3 .complement,
 .project5 .complement {
@@ -1404,11 +1477,9 @@ header .contact-btn button:not(:hover) span {
     left: 0;
     width: 960px;
     height: 480px;
-    /* border-top: 1px solid #bbb; */
     background-color: rgb(243, 243, 243);
     background-image: linear-gradient(45deg, #000 1px, transparent 1px);
     background-size: 12px 12px;
-    /* background-image: repeating-linear-gradient(45deg, #999, #999 1px, transparent 1px, transparent 12px); */
     transform: translateX(1080px);
 }
 

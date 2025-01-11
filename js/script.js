@@ -15,16 +15,20 @@ document.addEventListener("DOMContentLoaded", function () {
         return data.translatedText;
     };
 
-    const updateContentLanguage = async (targetLanguage) => {
-        const elementsToTranslate = document.querySelectorAll("[data-translate]");
-        for (const element of elementsToTranslate) {
-            const originalText = element.dataset.translate;
-            const translatedText = targetLanguage === 'en'
-                ? originalText // Use original text for English
-                : await translateText(originalText, targetLanguage);
-            element.innerText = translatedText;
-        }
-    };
+    // const updateContentLanguage = async (targetLanguage) => {
+    //     const elementsToTranslate = document.querySelectorAll("[data-translate]");
+    //     for (const element of elementsToTranslate) {
+    //         const originalText = element.dataset.translate; // Get the data-translate attribute
+    //         if (originalText) {
+    //             const translatedText = targetLanguage === 'en'
+    //                 ? originalText // Use the original text for English
+    //                 : await translateText(originalText, targetLanguage);
+    //             element.innerText = translatedText; // Replace text content with the translation
+    //         } else {
+    //             console.error('Missing data-translate attribute on:', element);
+    //         }
+    //     }
+    // };
 
     // Language switcher: English
     document.getElementById('en').addEventListener('click', async () => {
@@ -38,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
         espButton.classList.add('inactive');
 
         // Update content language
-        await updateContentLanguage('en');
+        // await updateContentLanguage('en');
     });
 
     // Language switcher: Spanish
@@ -53,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
         enButton.classList.add('inactive');
 
         // Update content language
-        await updateContentLanguage('es');
+        // await updateContentLanguage('es');
     });
 
     // Existing functionality: Video overlay
