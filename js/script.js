@@ -1,5 +1,32 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    // Shift language
+    document.getElementById('en').addEventListener('click', () => {
+        const enButton = document.getElementById('en');
+        const espButton = document.getElementById('esp');
+
+        // Set EN as active
+        enButton.classList.add('active');
+        enButton.classList.remove('inactive');
+
+        // Set ESP as inactive
+        espButton.classList.remove('active');
+        espButton.classList.add('inactive');
+    });
+
+    document.getElementById('esp').addEventListener('click', () => {
+        const espButton = document.getElementById('esp');
+        const enButton = document.getElementById('en');
+
+        // Set ESP as active
+        espButton.classList.add('active');
+        espButton.classList.remove('inactive');
+
+        // Set EN as inactive
+        enButton.classList.remove('active');
+        enButton.classList.add('inactive');
+    });
+
     // Get references to the video and overlay elements
     const videoOverlay = document.getElementById('videoOverlay');
     const reelVideo = document.getElementById('reelVideo');
@@ -48,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
             behavior: "smooth"
         });
     });
-    
+
     // services
     document.querySelector("#servicesLink").addEventListener("click", function () {
         const target = document.querySelector("#services");

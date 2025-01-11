@@ -99,6 +99,47 @@ body {
     transform: translateX(360px);
 }
 
+#language {
+    /* border: 1px solid #999; */
+    padding: 8px 20px;
+    /* border-radius: 5px; */
+    width: auto;
+    height: 16px;
+    position: absolute;
+    top: 24px;
+    right: 280px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: center; /* Adjust as needed for horizontal alignment */
+    gap: 8px; /* Add spacing between elements */
+}
+
+#language p {
+    font-weight: normal;
+    margin: 0;
+    font-size: 14px;
+}
+
+p.active:hover, p.inactive:hover {
+    color: blue; 
+    text-decoration: underline;
+}
+
+#language p.active {
+    color: black;
+    /* text-decoration: underline; */
+}
+
+#language p.inactive {
+    color: #999;
+}
+
+#language p.divisor {
+    color: #999;
+}
+
 .scroll {
     z-index: 5;
     border-radius: 60px;
