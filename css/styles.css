@@ -1377,7 +1377,7 @@ header .contact-btn button:not(:hover) span {
     left: 0;
     width: 720px;
     height: 480px;
-    background-color: #dbdbdb;
+    /* background-color: #dbdbdb; */
 }
 
 .project2 .image-slider,
@@ -1388,7 +1388,19 @@ header .contact-btn button:not(:hover) span {
     left: 360px;
     width: 720px;
     height: 480px;
-    background-color: #dbdbdb;
+    /* background-color: #dbdbdb; */
+}
+
+.project .img1 {
+    display: block;
+}
+
+.project .img2 {
+    display: none;
+}
+
+.project .img3 {
+    display: none;
 }
 
 .image-slider img {

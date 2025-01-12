@@ -1,19 +1,48 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Function to integrate LibreTranslate API
-    const translateText = async (text, targetLanguage) => {
-        const response = await fetch('https://libretranslate.com/translate', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                q: text,
-                source: 'en',
-                target: targetLanguage,
-                format: 'text',
-            }),
+
+    const images = document.querySelectorAll(".project img.img1, .project img.img2, .project img.img3");
+    const leftArrow = document.querySelector(".image-slider .left img");
+    const rightArrow = document.querySelector(".image-slider .right img");
+
+    let currentIndex = 0; // Start with the first image
+
+    // Function to update visibility of images
+    const updateImages = () => {
+        images.forEach((img, index) => {
+            img.style.display = index === currentIndex ? "block" : "none";
         });
-        const data = await response.json();
-        return data.translatedText;
     };
+
+    // Handle left arrow click
+    leftArrow.addEventListener("click", () => {
+        currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+        updateImages();
+    });
+
+    // Handle right arrow click
+    rightArrow.addEventListener("click", () => {
+        currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+        updateImages();
+    });
+
+    // Initialize the first image as visible
+    updateImages();
+
+    // Function to integrate LibreTranslate API
+    // const translateText = async (text, targetLanguage) => {
+    //     const response = await fetch('https://libretranslate.com/translate', {
+    //         method: 'POST',
+    //         headers: { 'Content-Type': 'application/json' },
+    //         body: JSON.stringify({
+    //             q: text,
+    //             source: 'en',
+    //             target: targetLanguage,
+    //             format: 'text',
+    //         }),
+    //     });
+    //     const data = await response.json();
+    //     return data.translatedText;
+    // };
 
     // const updateContentLanguage = async (targetLanguage) => {
     //     const elementsToTranslate = document.querySelectorAll("[data-translate]");
