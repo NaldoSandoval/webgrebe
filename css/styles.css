@@ -141,6 +141,203 @@ p.inactive:hover {
     color: #999;
 }
 
+header {
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 81px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid #999;
+    padding: 0 20px;
+    position: fixed;
+}
+
+header .logo {
+    width: auto;
+    float: left;
+}
+
+header .logo img {
+    position: relative;
+    left: 60px;
+    width: 40%;
+    height: auto;
+}
+
+header .menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header ul {
+    display: flex;
+    gap: 56px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: 6px;
+}
+
+header ul li {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* contact button setting */
+
+header .contact-btn button {
+    font-weight: bolder;
+    text-transform: uppercase;
+    font: inherit;
+    position: relative;
+    right: 90px;
+    padding: 8px 20px;
+    /* Reduced size by 20% */
+    border: none;
+    background-color: var(--orange-color);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header .contact-btn button:hover {
+    background-color: #ff5900;
+}
+
+header .contact-btn button:hover span {
+    color: #ff5900;
+    transition: color 0.3s ease;
+}
+
+header .contact-btn button div {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+header .contact-btn button:hover div {
+    white-space: nowrap;
+    overflow: hidden;
+    visibility: visible;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+
+header .contact-btn button div {
+    position: absolute;
+    top: -9px !important;
+    visibility: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    /* Initial opacity */
+}
+
+/* Marquee effect for <p> inside the div */
+header .contact-btn button:hover div p {
+    display: inline-block;
+    white-space: nowrap;
+    animation: contact-btn-marquee 5s linear infinite;
+}
+
+/* Define the marquee animation */
+@keyframes contact-btn-marquee {
+    from {
+        transform: translateX(0);
+        /* Start off-screen to the right */
+    }
+
+    to {
+        transform: translateX(-500px);
+        /* End off-screen to the left */
+    }
+}
+
+/* Mouse out effect */
+header .contact-btn button:not(:hover) div {
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+header .contact-btn button:not(:hover) span {
+    color: white;
+    transition: color 0.8s ease;
+}
+
+.header-guideline-left {
+    position: fixed;
+    top: 0;
+    height: 102px;
+    left: 50%;
+    width: 1px;
+    background-color: #bbb;
+    z-index: 15;
+    transform: translateX(360px);
+    overflow: hidden;
+}
+
+.header-guideline-right {
+    position: fixed;
+    top: 0;
+    height: 102px;
+    left: 50%;
+    width: 1px;
+    background-color: #bbb;
+    z-index: 15;
+    transform: translateX(-360px);
+    overflow: hidden;
+}
+
+header .responsive-menu {
+    display: none;
+}
+
+@media screen and (max-width: 1380px) {
+    .header-guideline-left {
+        display: none;
+    }
+
+    .header-guideline-right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+    header .logo img {
+        position: relative;
+        left: 20px;
+        width: 40%;
+        height: auto;
+    }
+
+    header .responsive-menu {
+        display: block;
+        position: relative;
+        right: 3rem;
+    }
+    header .contact-btn button {
+        display: none;
+    }
+    #language {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
 .scroll {
     z-index: 5;
     border-radius: 60px;
@@ -872,190 +1069,6 @@ p.inactive:hover {
     left: 50%;
     transform: translate(720px, -0);
     z-index: 3;
-}
-
-header {
-    z-index: 10;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 81px;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 1);
-    border-bottom: 1px solid #999;
-    padding: 0 20px;
-    position: fixed;
-}
-
-header .logo {
-    width: auto;
-    float: left;
-}
-
-header .logo img {
-    position: relative;
-    left: 60px;
-    width: 40%;
-    height: auto;
-}
-
-header .menu {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-header ul {
-    display: flex;
-    gap: 56px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    bottom: 6px;
-}
-
-header ul li {
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-/* contact button setting */
-
-header .contact-btn button {
-    font-weight: bolder;
-    text-transform: uppercase;
-    font: inherit;
-    position: relative;
-    right: 90px;
-    padding: 8px 20px;
-    /* Reduced size by 20% */
-    border: none;
-    background-color: var(--orange-color);
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-header .contact-btn button:hover {
-    background-color: #ff5900;
-}
-
-header .contact-btn button:hover span {
-    color: #ff5900;
-    transition: color 0.3s ease;
-}
-
-header .contact-btn button div {
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.8s ease;
-}
-
-header .contact-btn button:hover div {
-    white-space: nowrap;
-    overflow: hidden;
-    visibility: visible;
-    position: absolute;
-    top: 10px;
-    left: 0;
-    width: 100%;
-    opacity: 1;
-    transition-delay: 0.3s;
-}
-
-header .contact-btn button div {
-    position: absolute;
-    top: -9px !important;
-    visibility: hidden;
-    white-space: nowrap;
-    overflow: hidden;
-    opacity: 0;
-    /* Initial opacity */
-}
-
-/* Marquee effect for <p> inside the div */
-header .contact-btn button:hover div p {
-    display: inline-block;
-    white-space: nowrap;
-    animation: contact-btn-marquee 5s linear infinite;
-}
-
-/* Define the marquee animation */
-@keyframes contact-btn-marquee {
-    from {
-        transform: translateX(0);
-        /* Start off-screen to the right */
-    }
-
-    to {
-        transform: translateX(-500px);
-        /* End off-screen to the left */
-    }
-}
-
-/* Mouse out effect */
-header .contact-btn button:not(:hover) div {
-    opacity: 0;
-    transition: opacity 0.8s ease;
-}
-
-header .contact-btn button:not(:hover) span {
-    color: white;
-    transition: color 0.8s ease;
-}
-
-.container-reference {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -1;
-    width: 100%;
-    text-align: center;
-    opacity: 0%;
-}
-
-.container img {
-    width: auto;
-    max-width: 100%;
-    height: auto;
-}
-
-.header-guideline-left {
-    position: fixed;
-    top: 0;
-    height: 102px;
-    left: 50%;
-    width: 1px;
-    background-color: #bbb;
-    z-index: 15;
-    transform: translateX(360px);
-    overflow: hidden;
-}
-
-.header-guideline-right {
-    position: fixed;
-    top: 0;
-    height: 102px;
-    left: 50%;
-    width: 1px;
-    background-color: #bbb;
-    z-index: 15;
-    transform: translateX(-360px);
-    overflow: hidden;
-}
-
-@media screen and (max-width: 1380px) {
-    .header-guideline-left {
-        display: none;
-    }
-
-    .header-guideline-right {
-        display: none;
-    }
 }
 
 .ver-guideline-left {
