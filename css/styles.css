@@ -4,6 +4,92 @@
     --orange-color: #ff5900;
 }
 
+/* initial state of the responsive-menu  */
+@media screen and (min-width: 1081px) {
+
+    #responsive-reel div,
+    #responsive-services div,
+    #responsive-projects div,
+    #responsive-about div,
+    #responsive-contact div,
+    #responsive-bottom-footer div {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+    body {
+        height: auto !important;
+    }
+
+    .scroll, .scroll-img {
+        display: none !important;
+    }
+
+    .hor-guideline {
+        display: none !important;
+    }
+
+    #responsive-reel,
+    #responsive-services,
+    #responsive-projects,
+    #responsive-about,
+    #responsive-contact,
+    #responsive-bottom-footer {
+        position: relative;
+        top: 63px;
+        display: block;
+        width: 100%;
+        background-color: #eaeaea;
+        left: 50%;
+        border-top: 1px solid #bbb;
+        transform: translateX(-50%);
+    }
+
+    #responsive-reel {
+        height: 480px;
+    }
+
+    #responsive-services {
+        height: 480px;
+    }
+
+    #responsive-projects {
+        height: 480px;
+    }
+
+    #responsive-about {
+        height: 480px;
+    }
+
+    #responsive-contact {
+        height: 480px;
+    }
+
+    #responsive-bottom-footer {
+        height: 80px;
+    }
+
+    #responsive-reel div,
+    #responsive-services div,
+    #responsive-projects div,
+    #responsive-about div,
+    #responsive-contact div,
+    #responsive-bottom-footer div {
+        position: relative;
+        display: block;
+        height: 100%;
+        width: 80%;
+        background-color: white;
+        left: 50%;
+        border-left: 1px solid #bbb;
+        border-right: 1px solid #bbb;
+        /* border-bottom: 1px solid #bbb; */
+        transform: translateX(-50%);
+    }
+}
+
 body {
     font-family: 'Unbounded', sans-serif;
     margin: 0;
@@ -111,9 +197,12 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     display: flex;
-    align-items: center; /* Align items vertically in the center */
-    justify-content: center; /* Adjust as needed for horizontal alignment */
-    gap: 8px; /* Add spacing between elements */
+    align-items: center;
+    /* Align items vertically in the center */
+    justify-content: center;
+    /* Adjust as needed for horizontal alignment */
+    gap: 8px;
+    /* Add spacing between elements */
 }
 
 #language p {
@@ -123,7 +212,7 @@ body {
 }
 
 p.inactive:hover {
-    color: blue; 
+    color: blue;
     text-decoration: underline;
 }
 
@@ -180,7 +269,7 @@ header ul {
     margin: 0;
     padding: 0;
     position: relative;
-    bottom: 6px;
+    bottom: 2px;
 }
 
 header ul li {
@@ -326,15 +415,31 @@ header .responsive-menu {
         position: relative;
         right: 3rem;
     }
+
     header .contact-btn button {
         display: none;
     }
+
     #language {
-        display: none;
+        right: 150px;
     }
+
+    /* #language {
+        display: none;
+    } */
 
     .menu {
         display: none;
+    }
+
+    /* Hide sections on smaller screens */
+    #reel, 
+    #services, 
+    #projects, 
+    #about, 
+    #contact, 
+    #bottom-footer {
+        display: none !important;
     }
 }
 
@@ -1024,11 +1129,11 @@ header .responsive-menu {
 }
 
 .services-guide1 {
-    display: block; 
-    position: absolute; 
-    width: 1px; 
-    height: 480px; 
-    background-color: #bbb; 
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 480px;
+    background-color: #bbb;
     top: 1613px;
     left: 50%;
     transform: translate(-360px, -0);
@@ -1036,11 +1141,11 @@ header .responsive-menu {
 }
 
 .services-guide2 {
-    display: block; 
-    position: absolute; 
-    width: 1px; 
-    height: 480px; 
-    background-color: #bbb; 
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 480px;
+    background-color: #bbb;
     top: 1613px;
     left: 50%;
     transform: translate(0, -0);
@@ -1048,11 +1153,11 @@ header .responsive-menu {
 }
 
 .services-guide3 {
-    display: block; 
-    position: absolute; 
-    width: 1px; 
-    height: 480px; 
-    background-color: #bbb; 
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 480px;
+    background-color: #bbb;
     top: 1613px;
     left: 50%;
     transform: translate(360px, -0);
@@ -1060,11 +1165,11 @@ header .responsive-menu {
 }
 
 .services-guide4 {
-    display: block; 
-    position: absolute; 
-    width: 1px; 
-    height: 480px; 
-    background-color: #bbb; 
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 480px;
+    background-color: #bbb;
     top: 1613px;
     left: 50%;
     transform: translate(720px, -0);
@@ -1114,17 +1219,17 @@ header .responsive-menu {
 }
 
 /* previos zero z-index */
-.hor-guideline.z-index-5{
+.hor-guideline.z-index-5 {
     z-index: -5
 }
 
 /* previous -1 z-index */
-.hor-guideline.z-index-3{
+.hor-guideline.z-index-3 {
     z-index: -3
 }
 
 /* previous -1 z-index */
-.hor-guideline.z-index-1{
+.hor-guideline.z-index-1 {
     z-index: 1
 }
 
@@ -1421,14 +1526,17 @@ header .responsive-menu {
     /* display: none;  */
     position: relative;
     top: 215px;
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease; /* Smooth transition */
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 0.3s ease;
+    /* Smooth transition */
     cursor: pointer;
 }
 
 .project .image-slider .left:hover img,
 .project .image-slider .right:hover img {
-    opacity: 1; /* Fully visible on hover */
+    opacity: 1;
+    /* Fully visible on hover */
     /* display: block;  */
 }
 
