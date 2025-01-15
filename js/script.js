@@ -80,6 +80,21 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    // Video overlay Responsive
+    const videoOverlayRes = document.getElementById('videoOverlay-res');
+    const reelVideoRes = document.getElementById('reelVideo-res');
+
+    videoOverlayRes.addEventListener('click', function () {
+        videoOverlayRes.style.display = 'none';
+        reelVideoRes.classList.add('video-playing');
+        reelVideoRes.play();
+    });
+
+    reelVideoRes.addEventListener('ended', function () {
+        videoOverlayRes.style.display = 'block';
+        reelVideoRes.classList.remove('video-playing');
+    });
+
     // Smooth scrolling for menu links
     const smoothScroll = (selector, targetSelector, yOffset) => {
         document.querySelector(selector).addEventListener('click', function () {

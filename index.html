@@ -33,7 +33,7 @@
 </head>
 
 <body>
-    <header>
+    <header style="visibility: hidden;">
         <div class="logo">
             <a href="#" id="logoLink">
                 <img src="img/logo.png" alt="studio logo">
@@ -69,16 +69,16 @@
     </header>
 
 
-    <div class="animated_text1"></div>
-    <div class="animated_text2"></div>
+    <div class="animated_text1" style="visibility: hidden;"></div>
+    <div class="animated_text2" style="visibility: hidden;"></div>
 
-    <div class="header-background-a"></div>
-    <div class="header-background-1"></div>
-    <div class="header-background-b"></div>
-    <div class="header-background-2"></div>
+    <div class="header-background-a" style="visibility: hidden;"></div>
+    <div class="header-background-1" style="visibility: hidden;"></div>
+    <div class="header-background-b" style="visibility: hidden;"></div>
+    <div class="header-background-2" style="visibility: hidden;"></div>
 
-    <div class="header-background-a2"></div>
-    <div class="header-background-b2"></div>
+    <div class="header-background-a2" style="visibility: hidden;"></div>
+    <div class="header-background-b2" style="visibility: hidden;"></div>
 
     <!-- <div class="header-background-a3"></div>
     <div class="header-background-b3"></div> -->
@@ -534,32 +534,17 @@
     <!-- // Responsive Sections -->
     <section id="responsive-reel">
         <div>
-            <div class="video-overlap-res" id="videoOverlay-res">
+            <!-- <div class="video-overlap-res" id="videoOverlay-res" style="z-index: 10;">
                 <img src="img/play-overlap.png" alt="">
-            </div>
-            <video id="reelVideo-res" controls>
+            </div> -->
+            <!-- id="reelVideo-res" controls style="z-index: 11;" -->
+            <video controls>
                 <source src="media/reel_.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
     </section>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const videoOverlayRes = document.getElementById('videoOverlay-res');
-            const reelVideoRes = document.getElementById('reelVideo-res');
 
-            videoOverlayRes.addEventListener('click', function () {
-                videoOverlayRes.style.display = 'none';
-                reelVideoRes.style.display = 'block';
-                reelVideoRes.play();
-            });
-
-            reelVideoRes.addEventListener('ended', function () {
-                videoOverlayRes.style.display = 'block';
-                reelVideoRes.style.display = 'none';
-            });
-        });
-    </script>
     <section id="responsive-services">
         <div>responsive services</div>
     </section>
