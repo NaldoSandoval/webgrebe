@@ -81,18 +81,19 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Video overlay Responsive
-    const videoOverlayRes = document.getElementById('videoOverlay-res');
-    const reelVideoRes = document.getElementById('reelVideo-res');
+    const responsiveReelVideo = document.getElementById('responsiveReelVideo');
+    const responsiveReelImage = document.getElementById('responsiveReelImage');
 
-    videoOverlayRes.addEventListener('click', function () {
-        videoOverlayRes.style.display = 'none';
-        reelVideoRes.classList.add('video-playing');
-        reelVideoRes.play();
+    responsiveReelVideo.addEventListener('play', () => {
+        responsiveReelImage.style.display = 'none';
     });
 
-    reelVideoRes.addEventListener('ended', function () {
-        videoOverlayRes.style.display = 'block';
-        reelVideoRes.classList.remove('video-playing');
+    responsiveReelVideo.addEventListener('ended', () => {  
+        responsiveReelImage.style.display = 'block';
+    });
+
+    responsiveReelVideo.addEventListener('pause', () => {
+        responsiveReelImage.style.display = 'block';
     });
 
     // Smooth scrolling for menu links
