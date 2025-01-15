@@ -534,15 +534,32 @@
     <!-- // Responsive Sections -->
     <section id="responsive-reel">
         <div>
-            <div class="video-overlap" id="videoOverlay">
+            <div class="video-overlap-res" id="videoOverlay-res">
                 <img src="img/play-overlap.png" alt="">
             </div>
-            <video id="reelVideo" controls>
+            <video id="reelVideo-res" controls>
                 <source src="media/reel_.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
     </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const videoOverlayRes = document.getElementById('videoOverlay-res');
+            const reelVideoRes = document.getElementById('reelVideo-res');
+
+            videoOverlayRes.addEventListener('click', function () {
+                videoOverlayRes.style.display = 'none';
+                reelVideoRes.style.display = 'block';
+                reelVideoRes.play();
+            });
+
+            reelVideoRes.addEventListener('ended', function () {
+                videoOverlayRes.style.display = 'block';
+                reelVideoRes.style.display = 'none';
+            });
+        });
+    </script>
     <section id="responsive-services">
         <div>responsive services</div>
     </section>

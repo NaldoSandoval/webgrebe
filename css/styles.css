@@ -32,15 +32,20 @@
         object-fit: cover !important;
     }
 
-    .video-overlap, #reelVideo {
+    .video-overlap-res,
+    #reelVideo-res {
         position: relative !important;
         width: 100% !important;
         height: 0 !important;
         padding-bottom: 56.25% !important;
     }
 
+    .video-overlap-res {
+        cursor: pointer;
+    }
+
     #responsive-reel {
-        max-height: 45vw !important; /* Ensures the height does not exceed the aspect ratio of the video */
+        max-height: 45vw !important;
     }
 
     #responsive-reel,
@@ -88,7 +93,7 @@
         position: relative;
         display: block;
         height: 100%;
-        width: 80%;
+        width: 85%;
         background-color: white;
         left: 50%;
         border-left: 1px solid #bbb;
