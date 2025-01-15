@@ -66,7 +66,7 @@
     }
 
     #responsive-reel {
-        max-height: 45vw !important;
+        max-height: 37vw !important;
     }
 
     #responsive-reel div {
@@ -79,7 +79,7 @@
     }
 
     #responsive-reel video {
-        width: 100%;
+        width: 101%;
         /* height: 40%; */
     }
 
