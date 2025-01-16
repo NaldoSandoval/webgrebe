@@ -23,6 +23,15 @@
         height: auto !important;
     }
 
+    .scroll,
+    .scroll-img {
+        display: none !important;
+    }
+
+    .hor-guideline {
+        display: none !important;
+    }
+
     #responsive-reel div img {
         position: absolute !important;
         top: 0 !important;
@@ -30,39 +39,6 @@
         width: 100% !important;
         height: 100% !important;
         object-fit: cover !important;
-    }
-
-    /* 
-    #responsive-reel video {
-        position: absolute !important;
-        top: 0 !important;
-        left: 0 !important;
-        width: 100% !important;
-        height: 100% !important;
-        object-fit: cover !important;
-    } */
-
-    /* .video-overlap-res,
-    #reelVideo-res {
-        position: relative !important;
-        z-index: 30 !important;
-        width: 100% !important;
-        height: 0 !important;
-        padding-bottom: 56.25% !important;
-    }
-
-    #reelVideo-res {
-        display: none;
-        z-index: 30 !important;
-    } */
-
-    .video-playing #reelVideo-res {
-        display: block;
-    }
-
-    .video-overlap-res {
-        z-index: 20;
-        cursor: pointer;
     }
 
     #responsive-reel {
@@ -80,7 +56,6 @@
 
     #responsive-reel video {
         width: 101%;
-        /* height: 40%; */
     }
 
     #responsive-reel,
@@ -100,11 +75,29 @@
     }
 
     #responsive-services {
-        height: 480px;
+        height: 54vw;
     }
 
     #responsive-projects {
-        height: 480px;
+        height: 54vw;
+    }
+
+    #responsive-projects div {
+        background-color: var(--orange-color);
+    }
+
+    /* #responsive-projects div .achurado {
+        background-image: linear-gradient(45deg, #000 1px, transparent 1px);
+        background-size: 12px 12px;
+    } */
+
+    #responsive-projects div H3 {
+        position: inherit;
+        top: 17%;
+        padding: 0;
+        margin: 5%;
+        font-size: 28px;
+        text-align: center;
     }
 
     #responsive-about {
@@ -129,21 +122,25 @@
         display: block;
         height: 100%;
         width: 85%;
-        /* background-color: white; */
         left: 50%;
         border-left: 1px solid #bbb;
         border-right: 1px solid #bbb;
-        /* border-bottom: 1px solid #bbb; */
         transform: translateX(-50%);
     }
 
-    .scroll,
-    .scroll-img {
-        display: none !important;
+    #responsive-services div {
+        background-color: white;
+        background-image: linear-gradient(45deg, #000 1px, transparent 1px);
+        background-size: 12px 12px;
     }
 
-    .hor-guideline {
-        display: none !important;
+    #responsive-services div img {
+        position: absolute;
+        top: 17%;
+        left: 50%;
+        width: 80%;
+        height: auto;
+        transform: translateX(-50%);
     }
 }
 
