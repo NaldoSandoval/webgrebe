@@ -17,134 +17,6 @@
     }
 }
 
-@media screen and (max-width: 1080px) {
-
-    body {
-        height: auto !important;
-    }
-
-    .scroll,
-    .scroll-img {
-        display: none !important;
-    }
-
-    .hor-guideline {
-        display: none !important;
-    }
-
-    #responsive-reel div img {
-        position: absolute !important;
-        top: 0 !important;
-        left: 0 !important;
-        width: 100% !important;
-        height: 100% !important;
-        object-fit: cover !important;
-    }
-
-    #responsive-reel {
-        max-height: 37vw !important;
-    }
-
-    #responsive-reel div {
-        overflow: hidden;
-    }
-
-    #responsive img {
-        display: block;
-        width: 100%;
-    }
-
-    #responsive-reel video {
-        width: 101%;
-    }
-
-    #responsive-reel,
-    #responsive-services,
-    #responsive-projects,
-    #responsive-about,
-    #responsive-contact,
-    #responsive-bottom-footer {
-        position: relative;
-        top: 63px;
-        display: block;
-        width: 100%;
-        /* background-color: #000; */
-        background-color: #eaeaea;
-        left: 50%;
-        border-top: 1px solid #bbb;
-        transform: translateX(-50%);
-    }
-
-    #responsive-services {
-        height: 54vw;
-    }
-
-    #responsive-projects {
-        height: 54vw;
-    }
-
-    #responsive-projects div {
-        background-color: var(--orange-color);
-    }
-
-    /* #responsive-projects div .achurado {
-        background-image: linear-gradient(45deg, #000 1px, transparent 1px);
-        background-size: 12px 12px;
-    } */
-
-    #responsive-projects div H3 {
-        position: inherit;
-        top: 17%;
-        padding: 0;
-        margin: 5%;
-        font-size: 28px;
-        text-align: center;
-    }
-
-    #responsive-about {
-        height: 480px;
-    }
-
-    #responsive-contact {
-        height: 480px;
-    }
-
-    #responsive-bottom-footer {
-        height: 80px;
-    }
-
-    #responsive-reel div,
-    #responsive-services div,
-    #responsive-projects div,
-    #responsive-about div,
-    #responsive-contact div,
-    #responsive-bottom-footer div {
-        position: relative;
-        display: block;
-        height: 100%;
-        width: 85%;
-        left: 50%;
-        border-left: 1px solid #bbb;
-        border-right: 1px solid #bbb;
-        transform: translateX(-50%);
-    }
-
-    #responsive-services div {
-        background-color: white;
-        background-image: linear-gradient(45deg, #000 1px, transparent 1px);
-        background-size: 12px 12px;
-    }
-
-    #responsive-services div img {
-        position: absolute;
-        top: 17%;
-        left: 50%;
-        width: 80%;
-        height: auto;
-        transform: translateX(-50%);
-    }
-}
-
 body {
     font-family: 'Unbounded', sans-serif;
     margin: 0;
@@ -2522,4 +2394,132 @@ header .responsive-menu {
 
 #bottom-footer span {
     color: #999;
+}
+
+@media screen and (max-width: 1080px) {
+
+    body {
+        height: auto !important;
+    }
+
+    .scroll,
+    .scroll-img {
+        display: none !important;
+    }
+
+    .hor-guideline {
+        display: none !important;
+    }
+
+    #responsive-reel div img {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+
+    #responsive-reel {
+        max-height: 43vw !important;
+    }
+
+    #responsive-reel div {
+        overflow: hidden;
+    }
+
+    #responsive img {
+        display: block;
+        width: 100%;
+    }
+
+    #responsive-reel video {
+        width: 101%;
+    }
+
+    #responsive-reel,
+    #responsive-services,
+    #responsive-projects,
+    #responsive-about,
+    #responsive-contact,
+    #responsive-bottom-footer {
+        position: relative;
+        top: 63px;
+        display: block;
+        width: 100%;
+        /* background-color: #000; */
+        background-color: #eaeaea;
+        left: 50%;
+        border-top: 1px solid #bbb;
+        transform: translateX(-50%);
+    }
+
+    #responsive-services {
+        height: 54vw;
+    }
+
+    #responsive-projects {
+        height: 54vw;
+    }
+
+    #responsive-projects div {
+        background-color: var(--orange-color);
+    }
+
+    /* #responsive-projects div .achurado {
+        background-image: linear-gradient(45deg, #000 1px, transparent 1px);
+        background-size: 12px 12px;
+    } */
+
+    #responsive-projects div H3 {
+        position: inherit;
+        top: 17%;
+        padding: 0;
+        margin: 5%;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    #responsive-about {
+        height: 480px;
+    }
+
+    #responsive-contact {
+        height: 480px;
+    }
+
+    #responsive-bottom-footer {
+        height: 80px;
+    }
+
+    #responsive-reel div,
+    #responsive-services div,
+    #responsive-projects div,
+    #responsive-about div,
+    #responsive-contact div,
+    #responsive-bottom-footer div {
+        position: relative;
+        display: block;
+        height: 100%;
+        width: 100%;
+        left: 50%;
+        border-left: 1px solid #bbb;
+        border-right: 1px solid #bbb;
+        transform: translateX(-50%);
+    }
+
+    #responsive-services div {
+        background-color: white;
+        background-image: linear-gradient(45deg, #000 1px, transparent 1px);
+        background-size: 12px 12px;
+    }
+
+    #responsive-services div img {
+        position: absolute;
+        top: 17%;
+        left: 50%;
+        width: 80%;
+        height: auto;
+        transform: translateX(-50%);
+    }
 }
