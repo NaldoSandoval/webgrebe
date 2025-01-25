@@ -2447,7 +2447,6 @@ header .responsive-menu {
         top: 63px;
         display: block;
         width: 100%;
-        /* background-color: #000; */
         background-color: #eaeaea;
         left: 50%;
         border-top: 1px solid #bbb;
@@ -2463,16 +2462,16 @@ header .responsive-menu {
     }
 
     #responsive-projects {
-        height: auto;
+        height: 2000px;
     }
 
     #responsive-projects div {
         background-color: var(--orange-color);
     }
 
-    #responsive-projects div H3 {
+    #responsive-projects div h3 {
         position: inherit;
-        top: 17%;
+        top: 2rem;
         padding: 0;
         margin: 5%;
         font-size: 28px;
@@ -2515,12 +2514,19 @@ header .responsive-menu {
         /* background-size: 12px 12px; */
     }
 
-    #responsive-services div h3,
-    #responsive-projects div h3 {
+    #responsive-services div h3 {
         display: inline-block;
         margin-top: 0 !important;
         font-family: barlow; 
         font-size: 14px;
+    }
+
+    #responsive-projects .title {
+        display: inline-block !important;
+        margin-top: 0 !important;
+        font-family: barlow !important; 
+        font-size: 14px !important;
+        margin-bottom: 5rem !important;
     }
 
     #responsive-services div p {
@@ -2528,9 +2534,10 @@ header .responsive-menu {
     }
 
     #responsive-projects .project-module {
-        position: relative;
-        top: 50px;
-        background-color: red;
+        /* position: relative;
+        top: 50px; */
+        /* background-color: red; */
+        padding-left: 2rem;
         display: block;
         width: 100%;
         height: 120px;
@@ -2538,14 +2545,14 @@ header .responsive-menu {
         border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     }
 
-    #responsive-projects .project-module h3 {
+    #responsive-projects .project-module .module-title {
         font-size: 22px;
         font-family: inherit;
         font-weight: 300;
         display: inline-block;
     }
 
-    #responsive-projects .project-module p {
+    #responsive-projects .project-module .module-client {
         position: absolute;
         bottom: 2rem;
         left: 2.8rem;
