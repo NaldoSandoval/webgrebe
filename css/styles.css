@@ -2452,10 +2452,14 @@ header .responsive-menu {
         left: 50%;
         border-top: 1px solid #bbb;
         transform: translateX(-50%);
+        margin: 0;
+        padding: 0;
     }
 
     #responsive-services {
         height: 54vw;
+        margin: 0;
+        padding: 0;
     }
 
     #responsive-projects {
@@ -2465,11 +2469,6 @@ header .responsive-menu {
     #responsive-projects div {
         background-color: var(--orange-color);
     }
-
-    /* #responsive-projects div .achurado {
-        background-image: linear-gradient(45deg, #000 1px, transparent 1px);
-        background-size: 12px 12px;
-    } */
 
     #responsive-projects div H3 {
         position: inherit;
@@ -2503,23 +2502,29 @@ header .responsive-menu {
         height: 100%;
         width: 100%;
         left: 50%;
-        border-left: 1px solid #bbb;
-        border-right: 1px solid #bbb;
+        /* border-left: 1px solid #bbb;
+        border-right: 1px solid #bbb; */
         transform: translateX(-50%);
     }
 
     #responsive-services div {
-        background-color: white;
-        background-image: linear-gradient(45deg, #000 1px, transparent 1px);
-        background-size: 12px 12px;
+        margin-left: 2rem !important;
+        margin-top: 2rem !important;
+        background-color: white
+        /* background-image: linear-gradient(45deg, #000 1px, transparent 1px); */
+        /* background-size: 12px 12px; */
     }
 
-    #responsive-services div img {
-        position: absolute;
-        top: 17%;
-        left: 50%;
-        width: 80%;
-        height: auto;
-        transform: translateX(-50%);
+    #responsive-services div h3,
+    #responsive-projects div h3 {
+        display: inline-block;
+        margin-top: 0 !important;
+        font-family: barlow; 
+        font-size: 14px;
     }
+
+    #responsive-services div p {
+        font-size: 18px;
+    }
+
 }
