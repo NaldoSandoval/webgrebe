@@ -2456,7 +2456,7 @@ header .responsive-menu {
     }
 
     #responsive-services {
-        height: 280px;
+        height: 300px;
         margin: 0;
         padding: 0;
     }
@@ -2483,7 +2483,8 @@ header .responsive-menu {
     }
 
     #responsive-contact {
-        height: auto;
+        min-height: 260px !important;
+        background-color: #000;
     }
 
     #responsive-bottom-footer {
@@ -2514,7 +2515,8 @@ header .responsive-menu {
         display: inline-block;
         margin-top: 0 !important;
         font-family: barlow; 
-        font-size: 14px;
+        font-size: 20px;
+        font-weight: 500 !important;
     }
 
     #responsive-projects .title,
@@ -2524,12 +2526,14 @@ header .responsive-menu {
         margin-top: 2rem !important;
         margin-left: 2rem !important;
         font-family: barlow !important; 
-        font-size: 14px !important;
+        font-size: 20px !important;
+        font-weight: 500 !important;
         margin-bottom: 3rem !important;
     }
 
     #responsive-services div p {
-        font-size: 18px;
+        font-size: 20px;
+        font-weight: normal;
     }
 
     #responsive-projects .project-module {
@@ -2568,13 +2572,15 @@ header .responsive-menu {
         top: 85px;
     }
 
-    #responsive-about p {
+    #responsive-about p,
+    #responsive-contact p {
         font-size: 34px;
         font-weight: 300;
         margin: 2rem;
     }
 
-    #responsive-about .bullet {
+    #responsive-about .bullet,
+    #responsive-contact .bullet {
         position: absolute;
         top: 3rem;
         float: left;
@@ -2583,7 +2589,8 @@ header .responsive-menu {
         width: auto;
     }
 
-    #responsive-about .paragraph {
+    #responsive-about .paragraph,
+    #responsive-contact .paragraph {
         position: absolute;
         top: 3rem;
         left: 2.5rem;
@@ -2593,7 +2600,8 @@ header .responsive-menu {
         width: auto;
     }
 
-    
-
+    #responsive-contact h3, #responsive-contact p {
+        color: white;
+    }
 
 }
