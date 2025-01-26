@@ -2483,12 +2483,14 @@ header .responsive-menu {
     }
 
     #responsive-contact {
-        min-height: 260px !important;
+        min-height: 320px !important;
         background-color: #000;
     }
 
     #responsive-bottom-footer {
-        height: 80px;
+        height: auto !important;
+        background-color: black;
+        color: white;
     }
 
     #responsive-reel div,
@@ -2602,6 +2604,35 @@ header .responsive-menu {
 
     #responsive-contact h3, #responsive-contact p {
         color: white;
+    }
+
+    #responsive-bottom-footer .mail {
+        /* border-top: 1px solid #666; */
+        border-bottom: 1px solid #666;
+        height: auto;
+    }
+
+    #responsive-bottom-footer .mail a {
+        font-size: 28px;
+        font-weight: 600;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        display: block;
+        margin: 2rem auto;
+    }
+
+    #responsive-bottom-footer .fineprint {
+        height: auto;
+    }
+
+    #responsive-bottom-footer .fineprint p {
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+        color: #666;
+        margin: 0 auto;
+        padding: 1.5rem;
     }
 
 }
